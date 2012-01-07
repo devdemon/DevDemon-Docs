@@ -7,5 +7,5 @@ Mega Upload
   :maxdepth: 2
 
   installation
-  tags/index
+  template
 

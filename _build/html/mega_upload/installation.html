@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Installation &amp; Updates &mdash; DevDemon Addons 1.0.0 documentation</title>
+    <title>Template &mdash; DevDemon Addons 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/common.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../index.html" />
     <link rel="up" title="Mega Upload" href="index.html" />
-    <link rel="next" title="Template Tags" href="tags/index.html" />
+    <link rel="next" title="Installation &amp; Updates" href="template.html" />
     <link rel="prev" title="Mega Upload" href="index.html" /> 
   </head>
   <body>
@@ -39,33 +39,49 @@
 				<li><a href="../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
 				<li><a href="index.html"accesskey="U">Mega Upload</a>&nbsp;&nbsp; &raquo;</li>
 
-			<li><strong>Installation &amp; Updates</strong></li>
+			<li><strong>Template</strong></li>
 		</ul>
 	</div>
 	<div class="section" id="content">
-		<div class="section" id="installation-updates">
-<h1>Installation &amp; Updates<a class="headerlink" href="#installation-updates" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installing-mega-upload">
-<h2>Installing Mega Upload<a class="headerlink" href="#installing-mega-upload" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.</li>
-<li>Copy <strong>mega_upload</strong> module folder to your <strong>/system/expressionengine/third_party/</strong> folder.</li>
-<li>Copy the <strong>mega_upload</strong> themes folder to your <strong>/themes/third_party/</strong> folder.</li>
-<li>In the ExpressionEngine control panel, head to Add-ons &gt; Modules, and click &#8216;Install&#8217; next to the module name.</li>
-<li>Make sure you set the Extension, Fieldtype and Module all to &#8216;Install&#8217;, and click Submit.</li>
-</ol>
-<p>Mega Upload is now installed. Please visit the docs for setup, usage, and templating</p>
+		<div class="section" id="template">
+<h1>Template<a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h1>
+<p>Mega Upload is a fieldtype and doesn&#8217;t require any special tag.</p>
+<p>To insert Mega Upload within your template you just use the channel field directly.
+The actual field will provide you the actual URL of the file just like ExpressionEngine&#8217;s own file fieldtype.</p>
+<div class="section" id="variable-pair-mode">
+<h2>Variable Pair Mode<a class="headerlink" href="#variable-pair-mode" title="Permalink to this headline">¶</a></h2>
+<p>If the fieldtype is used in pair mode, you can use these variables within</p>
+<div class="section" id="filename">
+<h3>{filename}<a class="headerlink" href="#filename" title="Permalink to this headline">¶</a></h3>
+<p>The filename</p>
 </div>
-<div class="section" id="updating-mega-upload">
-<h2>Updating Mega Upload<a class="headerlink" href="#updating-mega-upload" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Backup your ExpressionEngine database and files on your web server!</li>
-<li>Did i already mention BACKUP!</li>
-<li>Strongly recommended: Test the upgrade process on a staging site first. If something goes wrong, you can always revert back!</li>
-<li>Replace the <strong>system/expressionengine/third_party/mega_upload</strong> folder on your web server.</li>
-<li>Replace the <strong>themes/third_party/mega_upload</strong> folder on your web server.</li>
-<li>In the ExpressionEngine control panel, head to Add-ons &gt; Modules, and click on &#8216;Run Module Updates&#8217; (in the top right)</li>
-</ol>
+<div class="section" id="extension">
+<h3>{extension}<a class="headerlink" href="#extension" title="Permalink to this headline">¶</a></h3>
+<p>The file extension</p>
+</div>
+<div class="section" id="path">
+<h3>{path}<a class="headerlink" href="#path" title="Permalink to this headline">¶</a></h3>
+<p>The path to the file</p>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="normal-mode">
+<h3>Normal Mode<a class="headerlink" href="#normal-mode" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ci"><pre>{exp:channel:entries channel="about"}
+    &lt;h2&gt;{title}&lt;/h2&gt;
+    &lt;p&gt;&lt;a href="{mega_upload_field}"&gt;Download File&lt;/a&gt;&lt;/p&gt;
+{/exp:channel:entries}</pre>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Variable Pair Mode<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ci"><pre>{exp:channel:entries channel="about"}
+    &lt;h2&gt;{title}&lt;/h2&gt;
+    &lt;p&gt;Filename: {mega_upload_field} {filename}.{extension} {/mega_upload_field}&lt;/p&gt;
+{/exp:channel:entries}</pre>
+</div>
+</div>
 </div>
 </div>
 
@@ -73,7 +89,7 @@
 	<div id="footer">
 		<p class="top">
 			<span class="prev">Previous Topic: <a href="index.html">Mega Upload</a></span>
-			<span class="next">Next Topic: <a href="tags/index.html">Template Tags</a></span>
+			<span class="next">Next Topic: <a href="template.html">Installation &amp; Updates</a></span>
 			<a href="#header" title="Return to top">Return to top</a>
 		</p>
 		<p>
