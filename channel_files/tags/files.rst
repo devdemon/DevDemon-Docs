@@ -189,7 +189,7 @@ Multiple instances of the `{file:switch=}` tag may be used and the system will i
 
 {file:count}
 ============
-The "count" out of the current files being displayed. If five files are being displayed, then for the fourth files the {file:count} variable would have a value of "4".
+The "count" out of the current files being displayed. If five files are being displayed, then for the fourth file the {file:count} variable would have a value of "4".
 
 {file:total}
 ============
