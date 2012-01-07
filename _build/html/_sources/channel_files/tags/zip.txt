@@ -9,6 +9,13 @@ This template tag allows you to create a .zip file from all the files in the ent
 
 .. contents::
   :local:
+  
+***********************
+Requirements
+***********************
+
+- PHP 5.2+
+- php_zip extension enabled
 
 ***********************
 Zip Tag Parameters

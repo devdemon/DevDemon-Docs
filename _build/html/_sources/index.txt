@@ -7,5 +7,6 @@ DevDemon Addons Documentation
   :maxdepth: 1
 
   *
+  channel_images/index
   channel_files/index
 

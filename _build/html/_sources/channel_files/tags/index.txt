@@ -6,6 +6,6 @@ Channel Files builds on the powerful templating language of ExpressionEngine. A 
 
 .. toctree::
   :glob:
-  :maxdepth: 1
+  :maxdepth: 2
 
   *
