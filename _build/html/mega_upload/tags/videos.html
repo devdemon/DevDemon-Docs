@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Videos Tag &mdash; DevDemon Addons 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="Template Tags" href="index.html" />
+    <link rel="next" title="Mega Upload" href="../../forum_subscribe/index.html" />
+    <link rel="prev" title="Template Tags" href="index.html" /> 
+  </head>
+  <body>
+		<div id="brand">
+			<p><a href="http://www.devdemon.com/"><img src="../../_static/assets/img/docs_devdemon_logo.png" alt="DevDemon"></a> <!-- DevDemon Addons 1.0.0 documentation --></p>
+		</div>
+
+	<div id="header">
+
+		<ul>
+				<li><a href="../../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="../index.html">Mega Upload</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="index.html"accesskey="U">Template Tags</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Videos Tag</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+		<div class="section" id="videos-tag">
+<h1>Videos Tag<a class="headerlink" href="#videos-tag" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-ci"><pre>{exp:channel_videos:videos}
+    &lt;!-- Template Code --&gt;
+{/exp:channel_videos:videos}</pre>
+</div>
+<p>This template tag allows you to show all videos within a single entry.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#parameters" id="id2">Parameters</a><ul>
+<li><a class="reference internal" href="#entry-id" id="id3">entry_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#url-title" id="id4">url_title=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#video-id" id="id5">video_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#orderby" id="id6">orderby=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#sort" id="id7">sort=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#limit" id="id8">limit=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#offset" id="id9">offset=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#embed-width" id="id10">embed_width=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#embed-height" id="id11">embed_height=&#8221;&#8220;</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variables" id="id12">Variables</a><ul>
+<li><a class="reference internal" href="#id1" id="id13">{video:id}</a></li>
+<li><a class="reference internal" href="#video-service" id="id14">{video:service}</a></li>
+<li><a class="reference internal" href="#video-service-id" id="id15">{video:service_id}</a></li>
+<li><a class="reference internal" href="#video-title" id="id16">{video:title}</a></li>
+<li><a class="reference internal" href="#video-description" id="id17">{video:description}</a></li>
+<li><a class="reference internal" href="#video-username" id="id18">{video:username}</a></li>
+<li><a class="reference internal" href="#video-author" id="id19">{video:author}</a></li>
+<li><a class="reference internal" href="#video-date" id="id20">{video:date}</a></li>
+<li><a class="reference internal" href="#video-views" id="id21">{video:views}</a></li>
+<li><a class="reference internal" href="#video-duration" id="id22">{video:duration}</a></li>
+<li><a class="reference internal" href="#video-duration-secs" id="id23">{video:duration_secs}</a></li>
+<li><a class="reference internal" href="#video-url" id="id24">{video:url}</a></li>
+<li><a class="reference internal" href="#video-url-hd" id="id25">{video:url_hd}</a></li>
+<li><a class="reference internal" href="#video-img-url" id="id26">{video:img_url}</a></li>
+<li><a class="reference internal" href="#video-img-url-hd" id="id27">{video:img_url_hd}</a></li>
+<li><a class="reference internal" href="#video-web-url" id="id28">{video:web_url}</a></li>
+<li><a class="reference internal" href="#video-embed-code" id="id29">{video:embed_code}</a></li>
+<li><a class="reference internal" href="#video-embed-code-hd" id="id30">{video:embed_code_hd}</a></li>
+<li><a class="reference internal" href="#video-count" id="id31">{video:count}</a></li>
+<li><a class="reference internal" href="#video-total" id="id32">{video:total}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conditionals" id="id33">Conditionals</a><ul>
+<li><a class="reference internal" href="#if-video-no-videos" id="id34">{if video:no_videos}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example" id="id35">Example</a></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h2><a class="toc-backref" href="#id2">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="entry-id">
+<h3><a class="toc-backref" href="#id3">entry_id=&#8221;&#8220;</a><a class="headerlink" href="#entry-id" title="Permalink to this headline">¶</a></h3>
+<p>Entry ID of an Channel Entry. Use this parameter to limit the videos list to a specific entry.</p>
+</div>
+<div class="section" id="url-title">
+<h3><a class="toc-backref" href="#id4">url_title=&#8221;&#8220;</a><a class="headerlink" href="#url-title" title="Permalink to this headline">¶</a></h3>
+<p>Same as entry_id=&#8221;&#8221; but now it with the entry&#8217;s url_title.</p>
+</div>
+<div class="section" id="video-id">
+<h3><a class="toc-backref" href="#id5">video_id=&#8221;&#8220;</a><a class="headerlink" href="#video-id" title="Permalink to this headline">¶</a></h3>
+<p>Video ID of an video. Use this parameter to limit the video list to a specific video.</p>
+</div>
+<div class="section" id="orderby">
+<h3><a class="toc-backref" href="#id6">orderby=&#8221;&#8220;</a><a class="headerlink" href="#orderby" title="Permalink to this headline">¶</a></h3>
+<p>The &#8220;order&#8221; parameter sets the display order of the videos. Setting options for this parameter include:</p>
+<ul class="simple">
+<li>orderby=&#8221;duration&#8221;</li>
+<li>orderby=&#8221;views&#8221;</li>
+<li>orderby=&#8221;date&#8221;</li>
+</ul>
+<p><strong>Default:</strong> orderby=&#8221;video_order&#8221;</p>
+</div>
+<div class="section" id="sort">
+<h3><a class="toc-backref" href="#id7">sort=&#8221;&#8220;</a><a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
+<p>The sort order can be ascending or descending. Setting options for this parameter include:
+- sort=&#8221;asc&#8221;
+- sort=&#8221;desc&#8221;</p>
+<p><strong>Default:</strong> sort=&#8221;asc&#8217;</p>
+</div>
+<div class="section" id="limit">
+<h3><a class="toc-backref" href="#id8">limit=&#8221;&#8220;</a><a class="headerlink" href="#limit" title="Permalink to this headline">¶</a></h3>
+<p>This parameter limits the number of videos on any given page. The limit will default to 30 entries if a value is not specified. If you are using pagination then this will determine the number of entries shown per page.</p>
+<p><strong>Default:</strong> limit=&#8221;30&#8221;</p>
+</div>
+<div class="section" id="offset">
+<h3><a class="toc-backref" href="#id9">offset=&#8221;&#8220;</a><a class="headerlink" href="#offset" title="Permalink to this headline">¶</a></h3>
+<p>This parameter offsets the display by X number of entries. For example, if you want to show all entries except the three latest ones, you would do this: offset=&#8221;3&#8221;</p>
+</div>
+<div class="section" id="embed-width">
+<h3><a class="toc-backref" href="#id10">embed_width=&#8221;&#8220;</a><a class="headerlink" href="#embed-width" title="Permalink to this headline">¶</a></h3>
+<p>The width of the embed. Default: 480</p>
+</div>
+<div class="section" id="embed-height">
+<h3><a class="toc-backref" href="#id11">embed_height=&#8221;&#8220;</a><a class="headerlink" href="#embed-height" title="Permalink to this headline">¶</a></h3>
+<p>The width of the embed. Default: 385</p>
+<p><strong>Default:</strong> prefix=&#8221;video&#8221;
+For example the default variable for the file URL is: <cite>{video:title}</cite> but if you use prefix=&#8221;cv&#8221; the variable for the file URL will now be {cv:title}</p>
+</div>
+</div>
+<div class="section" id="variables">
+<h2><a class="toc-backref" href="#id12">Variables</a><a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><a class="toc-backref" href="#id13">{video:id}</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The internal Video ID</p>
+</div>
+<div class="section" id="video-service">
+<h3><a class="toc-backref" href="#id14">{video:service}</a><a class="headerlink" href="#video-service" title="Permalink to this headline">¶</a></h3>
+<p>Displays from video service this video is from.
+Possible value: youtube or vimeo</p>
+</div>
+<div class="section" id="video-service-id">
+<h3><a class="toc-backref" href="#id15">{video:service_id}</a><a class="headerlink" href="#video-service-id" title="Permalink to this headline">¶</a></h3>
+<p>This variable displays the ID of the video (the video ID of youtube or vimeo)</p>
+</div>
+<div class="section" id="video-title">
+<h3><a class="toc-backref" href="#id16">{video:title}</a><a class="headerlink" href="#video-title" title="Permalink to this headline">¶</a></h3>
+<p>The video title</p>
+</div>
+<div class="section" id="video-description">
+<h3><a class="toc-backref" href="#id17">{video:description}</a><a class="headerlink" href="#video-description" title="Permalink to this headline">¶</a></h3>
+<p>The video description</p>
+</div>
+<div class="section" id="video-username">
+<h3><a class="toc-backref" href="#id18">{video:username}</a><a class="headerlink" href="#video-username" title="Permalink to this headline">¶</a></h3>
+<p>The username of the author (if available)</p>
+</div>
+<div class="section" id="video-author">
+<h3><a class="toc-backref" href="#id19">{video:author}</a><a class="headerlink" href="#video-author" title="Permalink to this headline">¶</a></h3>
+<p>The video author</p>
+</div>
+<div class="section" id="video-date">
+<h3><a class="toc-backref" href="#id20">{video:date}</a><a class="headerlink" href="#video-date" title="Permalink to this headline">¶</a></h3>
+<p>The date the video has been published
+For date variable info see: <a class="reference external" href="http://expressionengine.com/user_guide/templates/date_variable_formatting.html">http://expressionengine.com/user_guide/templates/date_variable_formatting.html</a></p>
+</div>
+<div class="section" id="video-views">
+<h3><a class="toc-backref" href="#id21">{video:views}</a><a class="headerlink" href="#video-views" title="Permalink to this headline">¶</a></h3>
+<p>The amount of views a video has received</p>
+</div>
+<div class="section" id="video-duration">
+<h3><a class="toc-backref" href="#id22">{video:duration}</a><a class="headerlink" href="#video-duration" title="Permalink to this headline">¶</a></h3>
+<p>The duration of the video.
+Example output: 32 sec or 23min etc</p>
+</div>
+<div class="section" id="video-duration-secs">
+<h3><a class="toc-backref" href="#id23">{video:duration_secs}</a><a class="headerlink" href="#video-duration-secs" title="Permalink to this headline">¶</a></h3>
+<p>The duration of the video in seconds</p>
+</div>
+<div class="section" id="video-url">
+<h3><a class="toc-backref" href="#id24">{video:url}</a><a class="headerlink" href="#video-url" title="Permalink to this headline">¶</a></h3>
+<p>The URL to the SWF</p>
+</div>
+<div class="section" id="video-url-hd">
+<h3><a class="toc-backref" href="#id25">{video:url_hd}</a><a class="headerlink" href="#video-url-hd" title="Permalink to this headline">¶</a></h3>
+<p>The URL to the SWF in HD (Youtube only)</p>
+</div>
+<div class="section" id="video-img-url">
+<h3><a class="toc-backref" href="#id26">{video:img_url}</a><a class="headerlink" href="#video-img-url" title="Permalink to this headline">¶</a></h3>
+<p>The URL to an image of the video
+Most of the time it&#8217;s 120x90</p>
+</div>
+<div class="section" id="video-img-url-hd">
+<h3><a class="toc-backref" href="#id27">{video:img_url_hd}</a><a class="headerlink" href="#video-img-url-hd" title="Permalink to this headline">¶</a></h3>
+<p>A higher quality URL to an image of the video
+Most of the time it&#8217;s 480x360</p>
+</div>
+<div class="section" id="video-web-url">
+<h3><a class="toc-backref" href="#id28">{video:web_url}</a><a class="headerlink" href="#video-web-url" title="Permalink to this headline">¶</a></h3>
+<p>The full URL to the webpage of the video</p>
+</div>
+<div class="section" id="video-embed-code">
+<h3><a class="toc-backref" href="#id29">{video:embed_code}</a><a class="headerlink" href="#video-embed-code" title="Permalink to this headline">¶</a></h3>
+<p>This variable will output the embed code for the video.</p>
+</div>
+<div class="section" id="video-embed-code-hd">
+<h3><a class="toc-backref" href="#id30">{video:embed_code_hd}</a><a class="headerlink" href="#video-embed-code-hd" title="Permalink to this headline">¶</a></h3>
+<p>This variable will output the embed code for the video.
+But this time in HD (youtube only)</p>
+</div>
+<div class="section" id="video-count">
+<h3><a class="toc-backref" href="#id31">{video:count}</a><a class="headerlink" href="#video-count" title="Permalink to this headline">¶</a></h3>
+<p>The &#8220;count&#8221; out of the current videos being displayed. If five videos are being displayed, then for the fourth video the {video:count} variable would have a value of &#8220;4&#8221;.</p>
+</div>
+<div class="section" id="video-total">
+<h3><a class="toc-backref" href="#id32">{video:total}</a><a class="headerlink" href="#video-total" title="Permalink to this headline">¶</a></h3>
+<p>The total number of videos being displayed.</p>
+</div>
+</div>
+<div class="section" id="conditionals">
+<h2><a class="toc-backref" href="#id33">Conditionals</a><a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="if-video-no-videos">
+<h3><a class="toc-backref" href="#id34">{if video:no_videos}</a><a class="headerlink" href="#if-video-no-videos" title="Permalink to this headline">¶</a></h3>
+<p>This tag will conditionally display the code inside the tag if there are no videos</p>
+</div>
+</div>
+<div class="section" id="example">
+<h2><a class="toc-backref" href="#id35">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ci"><pre>{exp:channel:entries channel="default_site"}
+    &lt;h1&gt;{title}&lt;/h1&gt;
+
+    {exp:channel_videos:videos entry_id="{entry_id}"}
+        &lt;h3&gt;{video:title}&lt;/h3&gt;
+        {video:embed_code}
+    {/exp:channel_videos:videos}
+
+{/exp:channel:entries}</pre>
+</div>
+</div>
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			<span class="prev">Previous Topic: <a href="index.html">Template Tags</a></span>
+			<span class="next">Next Topic: <a href="../../forum_subscribe/index.html">Mega Upload</a></span>
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="../../index.html">DevDemon Addons 1.0.0 documentation</a>
+			 &middot; Copyright &copy; 2012, DevDemon
+		</p>
+	</div><!-- /#footer -->
+  </body>
+</html>
