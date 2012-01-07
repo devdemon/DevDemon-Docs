@@ -1,0 +1,114 @@
+############
+Files Tag
+############
+::
+
+  {exp:channel_files:files} TEMPLATE CODE {/exp:channel_files:files}
+
+This template tag allows you to show all files within a single entry.
+
+.. contents::
+  :local:
+
+***********************
+Files Tag Parameters
+***********************
+
+entry_id=""
+==============
+Entry ID of an Channel Entry. Use this parameter to limit the files list to a specific entry.
+
+url_title=""
+==============
+Same as entry_id="" but now it with the entry's url_title.
+
+channel=""
+==============
+Limit the files list to a specific Channel.
+
+channel_id=""
+==============
+Same as channel="" but uses channel_id's instead.
+
+field=""
+==============
+Limit the files list to a specific Entry Field.
+
+category=""
+==============
+Limit the files list to a specific category as chosen in the Fieldtype.
+
+file_id=""
+==========
+File ID of an file. Use this parameter to limit the files list to a specific file.
+
+primary_only=""
+===============
+Limit the results to only the primary files.
+
+- **Options:** yes | no
+- **Default:** no
+
+skip_primary=""
+===============
+Skip primary files
+
+- **Options:** yes | no
+- **Default:** no
+
+orderby=""
+=============
+The "order" parameter sets the display order of the files. Setting options for this parameter include:
+
+-  orderby="title"
+-  orderby="upload_date"
+-  orderby="filename"
+-  orderby="filesize"
+-  orderby="file_id"
+-  orderby="random" 
+
+**Default:** orderby="file_order"
+
+sort=""
+=============
+The sort order can be ascending or descending. Setting options for this parameter include:
+- sort="asc"
+- sort="desc"
+
+**Default:** sort="asc'
+
+paginate=""
+=============
+This parameter is for use with files pagination and determines where the pagination code will appear for your files:
+
+=================== ====================================================================================
+Value               Description
+=================== ====================================================================================
+**top**             The navigation text and links will appear above your list of entries.
+**bottom**          The navigation text and links will appear below your list of entries.
+**both**            The navigation text and links will appear both above and below your list of entries.
+=================== ====================================================================================
+
+If no parameter is specified, the navigation block will default to the "bottom" behavior.
+
+paginate_base=""
+================
+This tells ExpressionEngine to override the normal pagination link locations and point instead to the explicitly stated template group and template.
+For example: paginate_base="files/list"
+
+limit=""
+========
+This parameter limits the number of files on any given page. The limit will default to 30 entries if a value is not specified. If you are using pagination then this will determine the number of entries shown per page.
+
+**Default:** limit="30"
+
+offset=""
+=============
+This parameter offsets the display by X number of entries. For example, if you want to show all entries except the three latest ones, you would do this: offset="3"
+
+prefix=""
+=============
+This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+
+**Default:** prefix="file"
+For example the default variable for the file URL is: {file:url} but if you use prefix="cf" the variable for the file URL will now be {cf:url}

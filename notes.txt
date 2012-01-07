@@ -1,0 +1,2 @@
+http://packages.python.org/sphinxcontrib-phpdomain/index.html
+

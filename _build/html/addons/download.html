@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Files Tag &mdash; DevDemon Addons 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/common.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../index.html" />
+    <link rel="up" title="Template Tags" href="index.html" />
+    <link rel="prev" title="Template Tags" href="index.html" /> 
+  </head>
+  <body>
+		<div id="brand">
+			<p>DevDemon Addons 1.0.0 documentation</p>
+		</div>
+
+	<div id="header">
+
+		<ul>
+				<li><a href="../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="index.html"accesskey="U">Template Tags</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Files Tag</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+		<div class="section" id="files-tag">
+<h1>Files Tag<a class="headerlink" href="#files-tag" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python"><pre>{exp:channel_files:files} TEMPLATE CODE {/exp:channel_files:files}</pre>
+</div>
+<p>This template tag allows you to show all files within a single entry.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#files-tag-parameters" id="id1">Files Tag Parameters</a><ul>
+<li><a class="reference internal" href="#entry-id" id="id2">entry_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#url-title" id="id3">url_title=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#channel" id="id4">channel=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#channel-id" id="id5">channel_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#field" id="id6">field=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#category" id="id7">category=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#file-id" id="id8">file_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#primary-only" id="id9">primary_only=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#skip-primary" id="id10">skip_primary=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#orderby" id="id11">orderby=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#sort" id="id12">sort=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#paginate" id="id13">paginate=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#paginate-base" id="id14">paginate_base=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#limit" id="id15">limit=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#offset" id="id16">offset=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#prefix" id="id17">prefix=&#8221;&#8220;</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="files-tag-parameters">
+<h2><a class="toc-backref" href="#id1">Files Tag Parameters</a><a class="headerlink" href="#files-tag-parameters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="entry-id">
+<h3><a class="toc-backref" href="#id2">entry_id=&#8221;&#8220;</a><a class="headerlink" href="#entry-id" title="Permalink to this headline">¶</a></h3>
+<p>Entry ID of an Channel Entry. Use this parameter to limit the files list to a specific entry.</p>
+</div>
+<div class="section" id="url-title">
+<h3><a class="toc-backref" href="#id3">url_title=&#8221;&#8220;</a><a class="headerlink" href="#url-title" title="Permalink to this headline">¶</a></h3>
+<p>Same as entry_id=&#8221;&#8221; but now it with the entry&#8217;s url_title.</p>
+</div>
+<div class="section" id="channel">
+<h3><a class="toc-backref" href="#id4">channel=&#8221;&#8220;</a><a class="headerlink" href="#channel" title="Permalink to this headline">¶</a></h3>
+<p>Limit the files list to a specific Channel.</p>
+</div>
+<div class="section" id="channel-id">
+<h3><a class="toc-backref" href="#id5">channel_id=&#8221;&#8220;</a><a class="headerlink" href="#channel-id" title="Permalink to this headline">¶</a></h3>
+<p>Same as channel=&#8221;&#8221; but uses channel_id&#8217;s instead.</p>
+</div>
+<div class="section" id="field">
+<h3><a class="toc-backref" href="#id6">field=&#8221;&#8220;</a><a class="headerlink" href="#field" title="Permalink to this headline">¶</a></h3>
+<p>Limit the files list to a specific Entry Field.</p>
+</div>
+<div class="section" id="category">
+<h3><a class="toc-backref" href="#id7">category=&#8221;&#8220;</a><a class="headerlink" href="#category" title="Permalink to this headline">¶</a></h3>
+<p>Limit the files list to a specific category as chosen in the Fieldtype.</p>
+</div>
+<div class="section" id="file-id">
+<h3><a class="toc-backref" href="#id8">file_id=&#8221;&#8220;</a><a class="headerlink" href="#file-id" title="Permalink to this headline">¶</a></h3>
+<p>File ID of an file. Use this parameter to limit the files list to a specific file.</p>
+</div>
+<div class="section" id="primary-only">
+<h3><a class="toc-backref" href="#id9">primary_only=&#8221;&#8220;</a><a class="headerlink" href="#primary-only" title="Permalink to this headline">¶</a></h3>
+<p>Limit the results to only the primary files.</p>
+<ul class="simple">
+<li><strong>Options:</strong> yes | no</li>
+<li><strong>Default:</strong> no</li>
+</ul>
+</div>
+<div class="section" id="skip-primary">
+<h3><a class="toc-backref" href="#id10">skip_primary=&#8221;&#8220;</a><a class="headerlink" href="#skip-primary" title="Permalink to this headline">¶</a></h3>
+<p>Skip primary files</p>
+<ul class="simple">
+<li><strong>Options:</strong> yes | no</li>
+<li><strong>Default:</strong> no</li>
+</ul>
+</div>
+<div class="section" id="orderby">
+<h3><a class="toc-backref" href="#id11">orderby=&#8221;&#8220;</a><a class="headerlink" href="#orderby" title="Permalink to this headline">¶</a></h3>
+<p>The &#8220;order&#8221; parameter sets the display order of the files. Setting options for this parameter include:</p>
+<ul class="simple">
+<li>orderby=&#8221;title&#8221;</li>
+<li>orderby=&#8221;upload_date&#8221;</li>
+<li>orderby=&#8221;filename&#8221;</li>
+<li>orderby=&#8221;filesize&#8221;</li>
+<li>orderby=&#8221;file_id&#8221;</li>
+<li>orderby=&#8221;random&#8221;</li>
+</ul>
+<p><strong>Default:</strong> orderby=&#8221;file_order&#8221;</p>
+</div>
+<div class="section" id="sort">
+<h3><a class="toc-backref" href="#id12">sort=&#8221;&#8220;</a><a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
+<p>The sort order can be ascending or descending. Setting options for this parameter include:
+- sort=&#8221;asc&#8221;
+- sort=&#8221;desc&#8221;</p>
+<p><strong>Default:</strong> sort=&#8221;asc&#8217;</p>
+</div>
+<div class="section" id="paginate">
+<h3><a class="toc-backref" href="#id13">paginate=&#8221;&#8220;</a><a class="headerlink" href="#paginate" title="Permalink to this headline">¶</a></h3>
+<p>This parameter is for use with files pagination and determines where the pagination code will appear for your files:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Value</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>top</strong></td>
+<td>The navigation text and links will appear above your list of entries.</td>
+</tr>
+<tr class="row-odd"><td><strong>bottom</strong></td>
+<td>The navigation text and links will appear below your list of entries.</td>
+</tr>
+<tr class="row-even"><td><strong>both</strong></td>
+<td>The navigation text and links will appear both above and below your list of entries.</td>
+</tr>
+</tbody>
+</table>
+<p>If no parameter is specified, the navigation block will default to the &#8220;bottom&#8221; behavior.</p>
+</div>
+<div class="section" id="paginate-base">
+<h3><a class="toc-backref" href="#id14">paginate_base=&#8221;&#8220;</a><a class="headerlink" href="#paginate-base" title="Permalink to this headline">¶</a></h3>
+<p>This tells ExpressionEngine to override the normal pagination link locations and point instead to the explicitly stated template group and template.
+For example: paginate_base=&#8221;files/list&#8221;</p>
+</div>
+<div class="section" id="limit">
+<h3><a class="toc-backref" href="#id15">limit=&#8221;&#8220;</a><a class="headerlink" href="#limit" title="Permalink to this headline">¶</a></h3>
+<p>This parameter limits the number of files on any given page. The limit will default to 30 entries if a value is not specified. If you are using pagination then this will determine the number of entries shown per page.</p>
+<p><strong>Default:</strong> limit=&#8221;30&#8221;</p>
+</div>
+<div class="section" id="offset">
+<h3><a class="toc-backref" href="#id16">offset=&#8221;&#8220;</a><a class="headerlink" href="#offset" title="Permalink to this headline">¶</a></h3>
+<p>This parameter offsets the display by X number of entries. For example, if you want to show all entries except the three latest ones, you would do this: offset=&#8221;3&#8221;</p>
+</div>
+<div class="section" id="prefix">
+<h3><a class="toc-backref" href="#id17">prefix=&#8221;&#8220;</a><a class="headerlink" href="#prefix" title="Permalink to this headline">¶</a></h3>
+<p>This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.</p>
+<p><strong>Default:</strong> prefix=&#8221;file&#8221;
+For example the default variable for the file URL is: {<a class="reference external" href="file:url">file:url</a>} but if you use prefix=&#8221;cf&#8221; the variable for the file URL will now be {cf:url}</p>
+</div>
+</div>
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			<span class="prev">Previous Topic: <a href="index.html">Template Tags</a></span>
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="../index.html">DevDemon Addons 1.0.0 documentation</a>
+			 &middot; Copyright &copy; 2012, DevDemon
+		</p>
+	</div><!-- /#footer -->
+  </body>
+</html>
