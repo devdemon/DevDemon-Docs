@@ -6,17 +6,11 @@
 Welcome to DevDemon Docs's documentation!
 =========================================
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+  :glob:
+  :titlesonly:
+  :maxdepth: 2
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+  *
+  channel_files/index
 
