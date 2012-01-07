@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Grouped Files Tag &mdash; DevDemon Addons 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="Template Tags" href="index.html" />
+    <link rel="next" title="Zip Tag" href="zip.html" />
+    <link rel="prev" title="Files Tag" href="files.html" /> 
+  </head>
+  <body>
+		<div id="brand">
+			<p><a href="http://www.devdemon.com/"><img src="../../_static/assets/img/docs_devdemon_logo.png" alt="DevDemon"></a> <!-- DevDemon Addons 1.0.0 documentation --></p>
+		</div>
+
+	<div id="header">
+
+		<ul>
+				<li><a href="../../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="../index.html">Channel Files</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="index.html"accesskey="U">Template Tags</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Grouped Files Tag</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+		<div class="section" id="grouped-files-tag">
+<h1>Grouped Files Tag<a class="headerlink" href="#grouped-files-tag" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-ci"><pre>{exp:channel_files:grouped_files}
+    &lt;!-- Template Code --&gt;
+{/exp:channel_files:grouped_files}</pre>
+</div>
+<p>This tag makes displaying files by category easier. It will automatically sort the files by category.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#parameters" id="id1">Parameters</a><ul>
+<li><a class="reference internal" href="#category-sort" id="id2">category_sort=&#8221;&#8220;</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variables" id="id3">Variables</a><ul>
+<li><a class="reference internal" href="#file-category" id="id4">{file:category}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variable-pairs" id="id5">Variable Pairs</a><ul>
+<li><a class="reference internal" href="#files-files" id="id6">{files} {/files}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conditionals" id="id7">Conditionals</a><ul>
+<li><a class="reference internal" href="#if-file-no-files" id="id8">{if file:no_files}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example" id="id9">Example</a></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h2><a class="toc-backref" href="#id1">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<p>All parameters of <a class="reference internal" href="files.html"><em>Files Tag</em></a> can be used here.</p>
+<div class="section" id="category-sort">
+<h3><a class="toc-backref" href="#id2">category_sort=&#8221;&#8220;</a><a class="headerlink" href="#category-sort" title="Permalink to this headline">¶</a></h3>
+<p>The sort order can be ascending or descending. Setting options for this parameter include:
+- category_sort=&#8221;asc&#8221;
+- category_sort=&#8221;desc&#8221;</p>
+<p><strong>Default:</strong> category_sort=&#8221;asc&#8217;</p>
+</div>
+</div>
+<div class="section" id="variables">
+<h2><a class="toc-backref" href="#id3">Variables</a><a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-category">
+<h3>{<a class="reference external" href="file:category">file:category</a>}<a class="headerlink" href="#file-category" title="Permalink to this headline">¶</a></h3>
+<p>The category name</p>
+</div>
+</div>
+<div class="section" id="variable-pairs">
+<h2><a class="toc-backref" href="#id5">Variable Pairs</a><a class="headerlink" href="#variable-pairs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="files-files">
+<h3><a class="toc-backref" href="#id6">{files} {/files}</a><a class="headerlink" href="#files-files" title="Permalink to this headline">¶</a></h3>
+<p>Lists all files in the category</p>
+<p>All variables of <a class="reference internal" href="files.html"><em>Files Tag</em></a> can be used here.</p>
+</div>
+</div>
+<div class="section" id="conditionals">
+<h2><a class="toc-backref" href="#id7">Conditionals</a><a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
+<p>These individual conditional variables are for use inside the {files} tag pair.</p>
+<div class="section" id="if-file-no-files">
+<h3>{if <a class="reference external" href="file:no_files">file:no_files</a>}<a class="headerlink" href="#if-file-no-files" title="Permalink to this headline">¶</a></h3>
+<p>This tag will conditionally display the code inside the tag if there are no files in current category</p>
+</div>
+</div>
+<div class="section" id="example">
+<h2><a class="toc-backref" href="#id9">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ci"><pre>{exp:channel:entries channel="about" url_title="{segment_3}"}
+        &lt;h2&gt;{title}&lt;/h2&gt;
+
+        {exp:channel_files:grouped_files entry_id="{entry_id}"}
+                &lt;strong&gt;{file:category}&lt;/strong&gt;
+                {files}
+                        &lt;a href="{file:locked_url}" title="{file:title}"&gt;{file:title}&lt;/a&gt;
+                {/files}
+        {/exp:channel_files:grouped_files}
+
+{/exp:channel:entries}</pre>
+</div>
+</div>
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			<span class="prev">Previous Topic: <a href="files.html">Files Tag</a></span>
+			<span class="next">Next Topic: <a href="zip.html">Zip Tag</a></span>
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="../../index.html">DevDemon Addons 1.0.0 documentation</a>
+			 &middot; Copyright &copy; 2012, DevDemon
+		</p>
+	</div><!-- /#footer -->
+  </body>
+</html>

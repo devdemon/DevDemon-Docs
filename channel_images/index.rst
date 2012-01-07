@@ -1,11 +1,11 @@
-DevDemon Addons Documentation
+Channel Images
 =========================================
 
 .. toctree::
   :glob:
   :titlesonly:
-  :maxdepth: 1
+  :maxdepth: 2
 
-  *
-  channel_files/index
+  installation
+  tags/index
 
