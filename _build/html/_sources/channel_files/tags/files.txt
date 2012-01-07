@@ -13,7 +13,7 @@ This template tag allows you to show all files within a single entry.
   :local:
 
 ***********************
-Files Tag Parameters
+Parameters
 ***********************
 
 entry_id=""
@@ -115,7 +115,7 @@ This parameter allows you to change the default variable prefix used. This is es
 For example the default variable for the file URL is: `{file:url}` but if you use prefix="cf" the variable for the file URL will now be {cf:url}
 
 **********************
-Files Tag Variables
+Variables
 **********************
 
 {file:id}
@@ -214,6 +214,15 @@ The contents of custom field 4
 {file:field:5}
 ============
 The contents of custom field 5
+
+****************************
+Conditionals
+****************************
+
+{if file:no_files}
+==================
+This tag will conditionally display the code inside the tag if there are no files
+
 
 **********************
 Example
