@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Count Hits Tag &mdash; DevDemon Addons 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="Template Tags" href="index.html" />
+    <link rel="next" title="Count Hits Tag" href="count_hits_image.html" />
+    <link rel="prev" title="Template Tags" href="index.html" /> 
+  </head>
+  <body>
+		<div id="brand">
+			<p><a href="http://www.devdemon.com/"><img src="../../_static/assets/img/docs_devdemon_logo.png" alt="DevDemon"></a> <!-- DevDemon Addons 1.0.0 documentation --></p>
+		</div>
+
+	<div id="header">
+
+		<ul>
+				<li><a href="../../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="../index.html">Hits</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="index.html"accesskey="U">Template Tags</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Count Hits Tag</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+		<div class="section" id="count-hits-tag">
+<h1>Count Hits Tag<a class="headerlink" href="#count-hits-tag" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-ci"><pre>{exp:hits:count_hits}
+    &lt;!-- Template Code --&gt;
+{/exp:hits:count_hits}</pre>
+</div>
+<p>This tag counts the hits received. It will do it&#8217;s best to ignore the most popular search engines.
+You will place this tag only on Single Entry Pages, sicne you only want to count the hits for a single entry at a time right?</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#parameters" id="id1">Parameters</a><ul>
+<li><a class="reference internal" href="#entry-id" id="id2">entry_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#url-title" id="id3">url_title=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#category" id="id4">category=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#category-id" id="id5">category_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#ci-id" id="id6">ci_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#cf-id" id="id7">cf_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#cv-id" id="id8">cv_id=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#br-id" id="id9">br_id=&#8221;&#8220;</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example" id="id10">Example</a></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h2><a class="toc-backref" href="#id1">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<p>You need to specify one of the following item id&#8217;s</p>
+<div class="section" id="entry-id">
+<h3><a class="toc-backref" href="#id2">entry_id=&#8221;&#8220;</a><a class="headerlink" href="#entry-id" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Entries</p>
+</div>
+<div class="section" id="url-title">
+<h3><a class="toc-backref" href="#id3">url_title=&#8221;&#8220;</a><a class="headerlink" href="#url-title" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Entries</p>
+</div>
+<div class="section" id="category">
+<h3><a class="toc-backref" href="#id4">category=&#8221;&#8220;</a><a class="headerlink" href="#category" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Categories (the url_title)</p>
+</div>
+<div class="section" id="category-id">
+<h3><a class="toc-backref" href="#id5">category_id=&#8221;&#8220;</a><a class="headerlink" href="#category-id" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Categories</p>
+</div>
+<div class="section" id="ci-id">
+<h3><a class="toc-backref" href="#id6">ci_id=&#8221;&#8220;</a><a class="headerlink" href="#ci-id" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Images</p>
+</div>
+<div class="section" id="cf-id">
+<h3><a class="toc-backref" href="#id7">cf_id=&#8221;&#8220;</a><a class="headerlink" href="#cf-id" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Files</p>
+</div>
+<div class="section" id="cv-id">
+<h3><a class="toc-backref" href="#id8">cv_id=&#8221;&#8220;</a><a class="headerlink" href="#cv-id" title="Permalink to this headline">¶</a></h3>
+<p>For Channel Videos</p>
+</div>
+<div class="section" id="br-id">
+<h3><a class="toc-backref" href="#id9">br_id=&#8221;&#8220;</a><a class="headerlink" href="#br-id" title="Permalink to this headline">¶</a></h3>
+<p>For BrilliantRetail</p>
+</div>
+</div>
+<div class="section" id="example">
+<h2><a class="toc-backref" href="#id10">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ci"><pre>{exp:channel:entries channel="blog"}
+
+        {exp:hits:count_hits entry_id="{entry_id}"}
+
+        &lt;h2&gt;{title}&lt;/h2&gt;
+        {body}
+{/exp:channel:entries}</pre>
+</div>
+</div>
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			<span class="prev">Previous Topic: <a href="index.html">Template Tags</a></span>
+			<span class="next">Next Topic: <a href="count_hits_image.html">Count Hits Tag</a></span>
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="../../index.html">DevDemon Addons 1.0.0 documentation</a>
+			 &middot; Copyright &copy; 2012, DevDemon
+		</p>
+	</div><!-- /#footer -->
+  </body>
+</html>

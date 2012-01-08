@@ -1,25 +1,48 @@
 ######################
-Installation & Updates
+Template
 ######################
 
-Installing Mega Upload
-==========================
+Mega Upload is a fieldtype and doesn't require any special tag.
 
-#. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
-#. Copy **mega_upload** module folder to your **/system/expressionengine/third_party/** folder.
-#. Copy the **mega_upload** themes folder to your **/themes/third_party/** folder.
-#. In the ExpressionEngine control panel, head to Add-ons > Modules, and click 'Install' next to the module name.
-#. Make sure you set the Extension, Fieldtype and Module all to 'Install', and click Submit.
+To insert Mega Upload within your template you just use the channel field directly.
+The actual field will provide you the actual URL of the file just like ExpressionEngine's own file fieldtype.
 
-Mega Upload is now installed. Please visit the docs for setup, usage, and templating
+****************************
+Variable Pair Mode
+****************************
+If the fieldtype is used in pair mode, you can use these variables within
+
+{filename}
+==================================
+The filename
+
+{extension}
+==================================
+The file extension
+
+{path}
+==================================
+The path to the file
 
 
-Updating Mega Upload
-========================
+**********************
+Example
+**********************
 
-#. Backup your ExpressionEngine database and files on your web server!
-#. Did i already mention BACKUP!
-#. Strongly recommended: Test the upgrade process on a staging site first. If something goes wrong, you can always revert back!
-#. Replace the **system/expressionengine/third_party/mega_upload** folder on your web server.
-#. Replace the **themes/third_party/mega_upload** folder on your web server.
-#. In the ExpressionEngine control panel, head to Add-ons > Modules, and click on 'Run Module Updates' (in the top right)
+Normal Mode
+==================================
+::
+
+	{exp:channel:entries channel="about"}
+	    <h2>{title}</h2>
+	    <p><a href="{mega_upload_field}">Download File</a></p>
+	{/exp:channel:entries} 
+	
+Variable Pair Mode
+==================================
+::
+
+	{exp:channel:entries channel="about"}
+	    <h2>{title}</h2>
+	    <p>Filename: {mega_upload_field} {filename}.{extension} {/mega_upload_field}</p>
+	{/exp:channel:entries}  
