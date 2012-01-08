@@ -65,6 +65,7 @@ embed_height=""
 The width of the embed. Default: 385
 
 **Default:** prefix="video"
+
 For example the default variable for the file URL is: `{video:title}` but if you use prefix="cv" the variable for the file URL will now be {cv:title}
 
 **********************

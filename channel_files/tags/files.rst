@@ -109,9 +109,10 @@ Would produce this:
 
 prefix=""
 =============
-This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
 
 **Default:** prefix="file"
+
 For example the default variable for the file URL is: `{file:url}` but if you use prefix="cf" the variable for the file URL will now be {cf:url}
 
 **********************
@@ -196,23 +197,23 @@ The "count" out of the current files being displayed. If five files are being di
 The total number of files being displayed.
 
 {file:field:1}
-============
+==============
 The contents of custom field 1
 
 {file:field:2}
-============
+===============
 The contents of custom field 2
 
 {file:field:3}
-============
+===============
 The contents of custom field 3
 
 {file:field:4}
-============
+================
 The contents of custom field 4
 
 {file:field:5}
-============
+===============
 The contents of custom field 5
 
 ****************************
@@ -311,12 +312,12 @@ These individual conditional variables are for use inside the {file:paginate} ta
 This tag will conditionally display the code inside the tag if there is a "next" page. If there is no next page then the content simply will not be displayed. (In the {file:paginate} tag pair)
 
 {if file:previous_page}
--------------------
+------------------------
 This tag will conditionally display the code inside the tag if there is a "previous" page. If there is no previous page then the content simply will not be displayed. (In the {file:paginate} tag pair)
 
 
 {file:pagination_links}
------------------------
+------------------------
 These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages.
 
 

@@ -26,10 +26,11 @@ Same as entry_id="" but now it with the entry's url_title.
 
 prefix=""
 =============
-This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
 
 **Default:** prefix="poll"
-For example the default variable for the file URL is: `{poll:total_votes}` but if you use prefix="cp" the variable for the file URL will now be {cp:total_votes}
+
+For example the variable `{poll:total_votes}`, if you use prefix="cp" the variable will now be {cp:total_votes}
 
 **********************
 Variables

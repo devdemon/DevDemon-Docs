@@ -35,10 +35,11 @@ If this parameter is not defined, they will be returned to the form page.
 
 prefix=""
 =============
-This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
 
 **Default:** prefix="poll"
-For example the default variable for the file URL is: `{poll:end_date}` but if you use prefix="cp" the variable for the file URL will now be {cp:end_date}
+
+For example the variable `{poll:end_date}`, if you use prefix="cp" the variable will now be {cp:end_date}
 
 **********************
 Variables

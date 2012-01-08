@@ -64,8 +64,13 @@ embed_height=""
 ================
 The width of the embed. Default: 385
 
+prefix=""
+=============
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
+
 **Default:** prefix="video"
-For example the default variable for the file URL is: `{video:title}` but if you use prefix="cv" the variable for the file URL will now be {cv:title}
+
+For example the variable `{video:title}`, if you use prefix="cv" the variable will now be {cv:title}
 
 **********************
 Variables

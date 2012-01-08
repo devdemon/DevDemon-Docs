@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Grouped Tags &mdash; DevDemon Addons 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/common.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="DevDemon Addons 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="Template Tags" href="index.html" />
+    <link rel="next" title="Decode Tag" href="tagname.html" />
+    <link rel="prev" title="Quick Entries List Tag" href="entries_quick.html" /> 
+  </head>
+  <body>
+		<div id="brand">
+			<p><a href="http://www.devdemon.com/"><img src="../../_static/assets/img/docs_devdemon_logo.png" alt="DevDemon"></a> <!-- DevDemon Addons 1.0.0 documentation --></p>
+		</div>
+
+	<div id="header">
+
+		<ul>
+				<li><a href="../../index.html">Home</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="../index.html">Tagger</a>&nbsp;&nbsp; &raquo;</li>
+				<li><a href="index.html"accesskey="U">Template Tags</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Grouped Tags</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+		<div class="section" id="grouped-tags">
+<h1>Grouped Tags<a class="headerlink" href="#grouped-tags" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-ci"><pre>{exp:tagger:groups}
+    &lt;!-- Template Code --&gt;
+{/exp:tagger:groups}</pre>
+</div>
+<p>This tag generates a list of tags by categorized by group</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#parameters" id="id2">Parameters</a><ul>
+<li><a class="reference internal" href="#groups" id="id3">groups=&#8221;&#8220;</a></li>
+<li><a class="reference internal" href="#prefix" id="id4">prefix=&#8221;&#8220;</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variables" id="id5">Variables</a><ul>
+<li><a class="reference internal" href="#tagger-group-title" id="id6">{tagger:group_title}</a></li>
+<li><a class="reference internal" href="#tagger-group-name" id="id7">{tagger:group_name}</a></li>
+<li><a class="reference internal" href="#tagger-group-desc" id="id8">{tagger:group_desc}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conditionals" id="id9">Conditionals</a><ul>
+<li><a class="reference internal" href="#if-tagger-no-groups" id="id10">{if tagger:no_groups}</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#variable-pairs" id="id11">Variable Pairs</a><ul>
+<li><a class="reference internal" href="#tagger-tags-tagger-tags" id="id12">{tagger:tags} {/tagger:tags}</a><ul>
+<li><a class="reference internal" href="#tagger-tag-name" id="id13">{tagger:tag_name}</a></li>
+<li><a class="reference internal" href="#id1" id="id14">{tagger:tag_name}</a></li>
+<li><a class="reference internal" href="#if-tagger-no-tags" id="id15">{if tagger:no_tags}</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example" id="id16">Example</a></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h2><a class="toc-backref" href="#id2">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="groups">
+<h3><a class="toc-backref" href="#id3">groups=&#8221;&#8220;</a><a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h3>
+<p>If you want to limit the list of group you can specify them here and separate them by a pipe character</p>
+<p><strong>Default:</strong> all groups</p>
+</div>
+<div class="section" id="prefix">
+<h3><a class="toc-backref" href="#id4">prefix=&#8221;&#8220;</a><a class="headerlink" href="#prefix" title="Permalink to this headline">¶</a></h3>
+<p>This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.</p>
+<p><strong>Default:</strong> prefix=&#8221;tagger&#8221;</p>
+<p>For example the variable <cite>{tagger:group_title}</cite>, if you use prefix=&#8221;tg&#8221; the variable will now be {tg:group_title}</p>
+</div>
+</div>
+<div class="section" id="variables">
+<h2><a class="toc-backref" href="#id5">Variables</a><a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tagger-group-title">
+<h3><a class="toc-backref" href="#id6">{tagger:group_title}</a><a class="headerlink" href="#tagger-group-title" title="Permalink to this headline">¶</a></h3>
+<p>The group title</p>
+</div>
+<div class="section" id="tagger-group-name">
+<h3><a class="toc-backref" href="#id7">{tagger:group_name}</a><a class="headerlink" href="#tagger-group-name" title="Permalink to this headline">¶</a></h3>
+<p>The group short name (url_title)</p>
+</div>
+<div class="section" id="tagger-group-desc">
+<h3><a class="toc-backref" href="#id8">{tagger:group_desc}</a><a class="headerlink" href="#tagger-group-desc" title="Permalink to this headline">¶</a></h3>
+<p>The group description</p>
+</div>
+</div>
+<div class="section" id="conditionals">
+<h2><a class="toc-backref" href="#id9">Conditionals</a><a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="if-tagger-no-groups">
+<h3><a class="toc-backref" href="#id10">{if tagger:no_groups}</a><a class="headerlink" href="#if-tagger-no-groups" title="Permalink to this headline">¶</a></h3>
+<p>This tag will conditionally display the code inside the tag if there are no tag groups to display</p>
+</div>
+</div>
+<div class="section" id="variable-pairs">
+<h2><a class="toc-backref" href="#id11">Variable Pairs</a><a class="headerlink" href="#variable-pairs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tagger-tags-tagger-tags">
+<h3><a class="toc-backref" href="#id12">{tagger:tags} {/tagger:tags}</a><a class="headerlink" href="#tagger-tags-tagger-tags" title="Permalink to this headline">¶</a></h3>
+<p>Lists all tags within the groups
+Here is a list of available variables WITHIN this variable pair</p>
+<div class="section" id="tagger-tag-name">
+<h4><a class="toc-backref" href="#id13">{tagger:tag_name}</a><a class="headerlink" href="#tagger-tag-name" title="Permalink to this headline">¶</a></h4>
+<p>The Tag name</p>
+</div>
+<div class="section" id="id1">
+<h4><a class="toc-backref" href="#id14">{tagger:tag_name}</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>An URL Safe tag name, good for use in &lt;a href=&#8221;&#8220;&gt; tags</p>
+</div>
+<div class="section" id="if-tagger-no-tags">
+<h4><a class="toc-backref" href="#id15">{if tagger:no_tags}</a><a class="headerlink" href="#if-tagger-no-tags" title="Permalink to this headline">¶</a></h4>
+<p>This tag will conditionally display the code inside the tag if there are no tags in this groups to display</p>
+</div>
+</div>
+</div>
+<div class="section" id="example">
+<h2><a class="toc-backref" href="#id16">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ci"><pre>{exp:tagger:groups}
+        {if tagger:no_groups}&lt;p&gt;No groups where found.&lt;/p&gt;{/if}
+        &lt;h2&gt;{tagger:group_title}&lt;/h2&gt;
+        {tagger:tags}
+                {if tagger:no_tags}&lt;p&gt;No Tags where found&lt;/p&gt;{/if}
+                &lt;p&gt;&lt;a href="/tag/{tagger:urlsafe_tagname}"&gt;{tagger:tag_name}&lt;/a&gt;&lt;/p&gt;
+        {/tagger:tags}
+{/exp:tagger:groups}</pre>
+</div>
+</div>
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			<span class="prev">Previous Topic: <a href="entries_quick.html">Quick Entries List Tag</a></span>
+			<span class="next">Next Topic: <a href="tagname.html">Decode Tag</a></span>
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="../../index.html">DevDemon Addons 1.0.0 documentation</a>
+			 &middot; Copyright &copy; 2012, DevDemon
+		</p>
+	</div><!-- /#footer -->
+  </body>
+</html>

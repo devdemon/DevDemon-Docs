@@ -52,9 +52,10 @@ You can also use {IMG_TITLE} and {IMG_DESC} in this parameter
 
 prefix=""
 ==========
-This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
 
 **Default:** prefix="image"
+
 For example the default variable for the image URL is: `{image:url}` but if you use prefix="ci" the variable for the image URL will now be {cf:url}
 
 **********************

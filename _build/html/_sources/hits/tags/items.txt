@@ -84,11 +84,11 @@ Would produce this:
 	
 prefix=""
 =============
-This parameter allows you to change the default variable prefix used. This is especially usefull when you are nesting tags to avoid variable collisions.
+This parameter allows you to change the default variable prefix used. This is especially useful when you are nesting tags to avoid variable collisions.
 
 **Default:** prefix="hits"
-For example the default variable for the file URL is: `{hits:count}` but if you use prefix="hi" the variable for the file URL will now be {hi:count}
 
+For example the variable `{hits:count}`, if you use prefix="hi" the variable will now be {hi:count}
 
 **********************
 Variables
