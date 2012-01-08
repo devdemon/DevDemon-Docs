@@ -49,6 +49,8 @@ For Channel Videos
 br_id=""
 ==============
 For BrilliantRetail
+
+.. important:: You MUST use one of the above parameters.
 	
 **********************
 Example

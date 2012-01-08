@@ -123,7 +123,7 @@ Replace CUSTOM_FIELD with the field you want. The ones you specified in the cust
 
 {tagger:count}
 =========================
-The "count" out of the current entry being displayed. If five items are being displayed, then for the fourth item the count variable would have a value of "4".
+The "count" out of the current item being displayed. If five items are being displayed, then for the fourth item the count variable would have a value of "4".
 
 {tagger:total_entries}
 =======================
@@ -153,4 +153,99 @@ Example
 		
 		<p><a href="/entry/{tagger:entry_url_title}">Read More</a></p>
 		
+	{/exp:tagger:entries}
+	
+***********************
+Pagination
+***********************
+The pagination feature allows you to display a limited number of files and then automatically link to the next set. That way you can, for example, show files 1-10 on the first page and automatically link to pages that display 11-20, 21-30, etc
+
+You have two choices as to the style of the navigation element. The first method would look something like this:
+
+::
+
+	Page 27 of 344 pages  << First  <  11 12 13 14 15 >  Last >>
+	
+The second method is a more traditional "next page" / "previous page" output:
+
+::
+	
+	Previous Page | Next Page
+
+
+Parameters
+=====================
+
+paginate=""
+-----------
+
+::
+
+	paginate="top" paginate="bottom"  paginate="both"
+
+This parameter is for use with entries pagination and determines where the pagination code will appear for your entries:
+
+=================== ====================================================================================
+Value               Description
+=================== ====================================================================================
+**top**             The navigation text and links will appear above your list of entries.
+**bottom**          The navigation text and links will appear below your list of entries.
+**both**            The navigation text and links will appear both above and below your list of entries.
+=================== ====================================================================================
+
+If no parameter is specified, the navigation block will default to the "bottom" behavior.
+
+paginate_base=""
+----------------
+This tells ExpressionEngine to override the normal pagination link locations and point instead to the explicitly stated template group and template.
+For example: paginate_base="entries/list"
+
+
+Variables
+=====================
+These individual variables are for use inside the {tagger:paginate} tag pair.
+
+{tagger:current_page}
+------------------------
+Outputs the current page number (In the {tagger:paginate} tag pair)
+
+{tagger:total_pages}
+-----------------------
+The total number of pages of you have (In the {tagger:paginate} tag pair)
+
+{tagger:pagination_links}
+---------------------------
+These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages. (In the {tagger:paginate} tag pair)
+
+
+Conditional Variables
+=====================
+These individual conditional variables are for use inside the {tagger:paginate} tag pair.
+
+{if tagger:next_page}
+-----------------------
+This tag will conditionally display the code inside the tag if there is a "next" page. If there is no next page then the content simply will not be displayed. (In the {tagger:paginate} tag pair)
+
+{if tagger:previous_page}
+---------------------------
+This tag will conditionally display the code inside the tag if there is a "previous" page. If there is no previous page then the content simply will not be displayed. (In the {tagger:paginate} tag pair)
+
+
+{tagger:pagination_links}
+---------------------------
+These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages.
+
+
+Example
+=====================
+
+::
+
+	{exp:tagger:entries tag="{segment_2}" custom_fields="body"}
+		<h2>{tagger:entry_title}</h2>        
+		{body}
+	
+		{tagger:paginate}
+			<p>Page {tagger:current_page} of {tagger:total_pages} pages {tagger:pagination_links}</p>
+		{/tagger:paginate}
 	{/exp:tagger:entries}

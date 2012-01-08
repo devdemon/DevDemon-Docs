@@ -26,7 +26,7 @@ Same as entry_id="" but now it with the entry's url_title.
 
 return=""
 =============
-This parameter allows you to define where the user will be returned after submitting a pll. The parameter can be defined in two ways:
+This parameter allows you to define where the user will be returned after submitting a vote. The parameter can be defined in two ways:
 
 - Use the standard Template_Group/Template syntax to specify where to return the user. For instance, if you want the user to be returned to the "local" Template in the "news" Template Group, you would use: return="news/local"
 - Use a full URL. For example: return="http://example.com/return.html"

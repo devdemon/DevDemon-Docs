@@ -95,7 +95,7 @@ Backspacing removes characters (including spaces and line breaks) from the last 
 
 ::
 
-	File 1<br />      File 2<br />      File 3<br />
+	Item 1<br />      Item 2<br />      Item 3<br />
 	
 You might, however, not want the <br /> tag after the final item. Simply count the number of characters (including spaces and line breaks) you want to remove and add the backspace parameter to the tag. The <br /> tag has 6 characters plus a new line character, so you would do this:
 
@@ -105,7 +105,7 @@ Would produce this:
 
 ::
 
-	File 1<br />      File 2<br />      File 3
+	Item 1<br />      Item 2<br />      Item 3
 
 prefix=""
 =============
