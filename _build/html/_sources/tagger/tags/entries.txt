@@ -88,6 +88,10 @@ The entry ID
 ====================
 The entries title
 
+{tagger:entry_url_title}
+========================= 
+The entries url title
+
 {tagger:entry_date}
 ====================
 The entry date
