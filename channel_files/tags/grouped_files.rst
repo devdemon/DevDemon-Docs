@@ -1,6 +1,6 @@
-############
+######################
 Grouped Files Tag
-############
+######################
 ::
 
   {exp:channel_files:grouped_files}
@@ -30,7 +30,8 @@ The sort order can be ascending or descending. Setting options for this paramete
 **********************
 Variables
 **********************
-{file:category}
+
+{file\:category}
 =================
 The category name
 
@@ -49,7 +50,7 @@ Conditionals
 ****************************
 These individual conditional variables are for use inside the {files} tag pair.
 
-{if file:no_files}
+{if file\:no_files}
 ===================
 This tag will conditionally display the code inside the tag if there are no files in current category
 

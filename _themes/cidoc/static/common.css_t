@@ -128,6 +128,7 @@ fieldset{ border: 0; }
 .highlight-bash,
 .highlight-perl,
 .cp-path,
+.warning,
 .important,
 .note{
 	background-color: #F5FBFF;
@@ -148,10 +149,23 @@ fieldset{ border: 0; }
 
 	.cp-path{ background-color: #FFFDED; border-color: #D1CDB0; }
 	.important, .note{ background-color: #F2FFE8; border-color: #B9D3A6; }
+	.warning{ background-color: #ffe4e4; border-color: #ff6666; padding:0}
 	.highlight-rst{ background-color: #F9FEFE; border-color: #AACFCF; }
 
 	.important p,
 	.note p{ margin: 0; }
+
+.deprecated {
+	background-color: #FFFABC;
+	border: 2px solid #E9E5AC;
+	color: #333333;
+	margin: 20px 0 20px 20px;
+	padding: 10px 10px 8px;
+	text-align: left;
+}
+.deprecated .versionmodified {
+	font-weight:bold;
+}
 
 .admonition-title{
 	float: left;

@@ -119,69 +119,70 @@ For example the default variable for the file URL is: `{file:url}` but if you us
 Variables
 **********************
 
-{file:id}
+{file\:id}
 ==========
 The internal File ID
 
-{file:url}
-==========
+{file\:url}
+===========
 The full URL to the original file
 
-{file:secure_url}
-=================
+{file\:secure_url}
+==================
 Same as `{file:url}` but a HTTPS version
 
-{file:locked_url}
-=================
+{file\:locked_url}
+==================
 Obfuscated time limited url to the file
 
-{file:title}
-============
+{file\:title}
+=============
 The file title as specified in the field row
 
-{file:description}
-==================
+{file\:description}
+===================
 The file description as specified in the field row
 
-{file:category}
+{file\:category}
 ================
 File category (if used/specified)
 
-{file:date}
+{file\:date}
 ============
 Shows the date/time of the upload
 For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
 
-.. note:: This has been marked deprecated in favor of `{file:upload_date}` (since version 5.0.1)
+.. deprecated:: 5.0.1
+   Use `{file:upload_date}` instead.   
 
-{file:upload_date}
+{file\:upload_date}
 ====================
 Shows the date/time of the upload
 For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
 
-{file:filename}
-===============
+{file\:filename}
+================
 The filename of the file
 
-{file:extension}
-================
+{file\:extension}
+=================
 The file extension of the file
 
-{file:filesize}
-===============
+{file\:filesize}
+================
 The file size. Outputs for example: 2.3 MB
 
-{file:filesize_bytes}
-=====================
+{file\:filesize_bytes}
+=======================
 The file size, but now in bytes
 
-{file:mimetype}
-===============
+{file\:mimetype}
+=================
 The official mime-type of the file
 Example: image/jpeg
 
-{file:switch="one|two|three"}
-=============================
+{file\:switch="one|two|three"}
+==============================
 This variable permits you to rotate through any number of values as the entries are displayed. The first file will use "option_one", the second will use "option_two", the third "option_three", the fourth "option_one", and so on.
 
 The most straightforward use for this would be to alternate colors. It could be used like so:
@@ -200,31 +201,31 @@ The files would then alternate between <div class="one"> and <div class="two">.
 Multiple instances of the `{file:switch=}` tag may be used and the system will intelligently keep track of each one.
 	
 
-{file:count}
-============
-The "count" out of the current files being displayed. If five files are being displayed, then for the fourth file the {file:count} variable would have a value of "4".
+{file\:count}
+=============
+The "count" out of the current files being displayed. If five files are being displayed, then for the fourth file the `{file:count}` variable would have a value of "4".
 
-{file:total}
-============
+{file\:total}
+=============
 The total number of files being displayed.
 
-{file:field:1}
-==============
+{file\:field:1}
+===============
 The contents of custom field 1
 
-{file:field:2}
+{file\:field:2}
 ===============
 The contents of custom field 2
 
-{file:field:3}
+{file\:field:3}
 ===============
 The contents of custom field 3
 
-{file:field:4}
-================
+{file\:field:4}
+===============
 The contents of custom field 4
 
-{file:field:5}
+{file\:field:5}
 ===============
 The contents of custom field 5
 
@@ -232,8 +233,8 @@ The contents of custom field 5
 Conditionals
 ****************************
 
-{if file:no_files}
-==================
+{if file\:no_files}
+===================
 This tag will conditionally display the code inside the tag if there are no files
 
 
@@ -300,37 +301,32 @@ For example: paginate_base="files/list"
 
 Variables
 =====================
-These individual variables are for use inside the {file:paginate} tag pair.
+These individual variables are for use inside the `{file:paginate}` tag pair.
 
-{file:current_page}
--------------------
-Outputs the current page number (In the {file:paginate} tag pair)
+{file\:current_page}
+--------------------
+Outputs the current page number (In the `{file:paginate}` tag pair)
 
-{file:total_pages}
--------------------
-The total number of pages of you have (In the {file:paginate} tag pair)
+{file\:total_pages}
+--------------------
+The total number of pages of you have (In the `{file:paginate}` tag pair)
 
-{file:pagination_links}
------------------------
-These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages. (In the {file:paginate} tag pair)
+{file\:pagination_links}
+-------------------------
+These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages. (In the `{file:paginate}` tag pair)
 
 
 Conditional Variables
 =====================
-These individual conditional variables are for use inside the {file:paginate} tag pair.
+These individual conditional variables are for use inside the `{file:paginate}` tag pair.
 
-{if file:next_page}
--------------------
-This tag will conditionally display the code inside the tag if there is a "next" page. If there is no next page then the content simply will not be displayed. (In the {file:paginate} tag pair)
+{if file\:next_page}
+---------------------
+This tag will conditionally display the code inside the tag if there is a "next" page. If there is no next page then the content simply will not be displayed. (In the `{file:paginate}` tag pair)
 
-{if file:previous_page}
-------------------------
-This tag will conditionally display the code inside the tag if there is a "previous" page. If there is no previous page then the content simply will not be displayed. (In the {file:paginate} tag pair)
-
-
-{file:pagination_links}
-------------------------
-These show the current page you are on as well as "surrounding" pages in addition to links for nex/previous pages and first/last pages.
+{if file\:previous_page}
+-------------------------
+This tag will conditionally display the code inside the tag if there is a "previous" page. If there is no previous page then the content simply will not be displayed. (In the `{file:paginate}` tag pair)
 
 
 Example
