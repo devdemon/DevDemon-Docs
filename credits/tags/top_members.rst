@@ -39,7 +39,7 @@ Variables
 **********************
 
 {credits:screen_name}
-====================
+=======================
 The Screen Name of the user
 
 {credits:username}

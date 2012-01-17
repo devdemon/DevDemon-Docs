@@ -160,11 +160,11 @@ Example
 **********************
 ::
 
-<h3>Top Channel Images</h3>
-{exp:channel_ratings:top_items type="channel_images"}
-
-	{exp:channel_images:images image_id="{rating:item_id}"}
-		<img src="{image:url:small}">  {rating:overall:stars} <br /> 
-	{/exp:channel_images:images}
+	<h3>Top Channel Images</h3>
+	{exp:channel_ratings:top_items type="channel_images"}
 	
-{/exp:channel_ratings:top_items}
+		{exp:channel_images:images image_id="{rating:item_id}"}
+			<img src="{image:url:small}">  {rating:overall:stars} <br /> 
+		{/exp:channel_images:images}
+		
+	{/exp:channel_ratings:top_items}
