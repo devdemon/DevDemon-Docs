@@ -147,6 +147,18 @@ The file description as specified in the field row
 ================
 File category (if used/specified)
 
+{file:date}
+============
+Shows the date/time of the upload
+For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
+
+.. note:: This has been marked deprecated in favor of `{file:upload_date}` (since version 5.0.1)
+
+{file:upload_date}
+====================
+Shows the date/time of the upload
+For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
+
 {file:filename}
 ===============
 The filename of the file

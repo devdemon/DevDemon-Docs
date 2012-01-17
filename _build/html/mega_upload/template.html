@@ -82,18 +82,20 @@ The actual field will provide you the actual URL of the file just like Expressio
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="normal-mode">
 <h3>Normal Mode<a class="headerlink" href="#normal-mode" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ci"><pre>{exp:channel:entries channel="about"}
-    &lt;h2&gt;{title}&lt;/h2&gt;
-    &lt;p&gt;&lt;a href="{mega_upload_field}"&gt;Download File&lt;/a&gt;&lt;/p&gt;
-{/exp:channel:entries}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">channel</span><span class="o">=</span><span class="s2">&quot;about&quot;</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h2</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{mega_upload_field}&quot;</span><span class="o">&gt;</span><span class="nx">Download</span> <span class="nx">File</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="id1">
 <h3>Variable Pair Mode<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ci"><pre>{exp:channel:entries channel="about"}
-    &lt;h2&gt;{title}&lt;/h2&gt;
-    &lt;p&gt;Filename: {mega_upload_field} {filename}.{extension} {/mega_upload_field}&lt;/p&gt;
-{/exp:channel:entries}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">channel</span><span class="o">=</span><span class="s2">&quot;about&quot;</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h2</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Filename</span><span class="o">:</span> <span class="p">{</span><span class="nx">mega_upload_field</span><span class="p">}</span> <span class="p">{</span><span class="nx">filename</span><span class="p">}</span><span class="o">.</span><span class="p">{</span><span class="nx">extension</span><span class="p">}</span> <span class="p">{</span><span class="o">/</span><span class="nx">mega_upload_field</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="rating-new-rating">
 <h1>RATING: New Rating<a class="headerlink" href="#rating-new-rating" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:channel_ratings:new_rating}
-    &lt;!-- Template Code --&gt;
-{/exp:channel_ratings:new_rating}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">new_rating</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">new_rating</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This tag generates a form so you can submit ratings</p>
 <div class="contents local topic" id="contents">
@@ -232,35 +233,36 @@ This can happen if the user is banned OR is a guest and gues access is not enabl
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id28">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:channel_ratings:new_rating entry_id="{entry_id}" captcha="yes" max_value="5" return="/channel_rating/new_rating/"}
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">new_rating</span> <span class="nx">entry_id</span><span class="o">=</span><span class="s2">&quot;{entry_id}&quot;</span> <span class="nx">captcha</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span> <span class="nx">max_value</span><span class="o">=</span><span class="s2">&quot;5&quot;</span> <span class="k">return</span><span class="o">=</span><span class="s2">&quot;/channel_rating/new_rating/&quot;</span><span class="p">}</span>
 
-        {if rating:already_rated} You have already rated this entry{/if}
+        <span class="p">{</span><span class="k">if</span> <span class="nx">rating</span><span class="o">:</span><span class="nx">already_rated</span><span class="p">}</span> <span class="nx">You</span> <span class="nx">have</span> <span class="nx">already</span> <span class="nx">rated</span> <span class="k">this</span> <span class="nx">entry</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
 
-        {if rating:not_rated}
+        <span class="p">{</span><span class="k">if</span> <span class="nx">rating</span><span class="o">:</span><span class="nx">not_rated</span><span class="p">}</span>
 
-                {rating:fields}
-                        &lt;label&gt;{rating:field_title}&lt;/label&gt;
+                <span class="p">{</span><span class="nx">rating</span><span class="o">:</span><span class="nx">fields</span><span class="p">}</span>
+                        <span class="o">&lt;</span><span class="nx">label</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">rating</span><span class="o">:</span><span class="nx">field_title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">label</span><span class="o">&gt;</span>
 
-                        &lt;select name="{rating:form_name}"&gt;
-                                &lt;option value="1"&gt;1&lt;/option&gt;
-                                &lt;option value="2"&gt;2&lt;/option&gt;
-                                &lt;option value="3"&gt;3&lt;/option&gt;
-                                &lt;option value="4"&gt;4&lt;/option&gt;
-                                &lt;option value="5"&gt;5&lt;/option&gt;
-                        &lt;/select&gt;
-                {/rating:fields}
+                        <span class="o">&lt;</span><span class="nx">select</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;{rating:form_name}&quot;</span><span class="o">&gt;</span>
+                                <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
+                                <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
+                                <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;3&quot;</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
+                                <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="o">&gt;</span><span class="mi">4</span><span class="o">&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
+                                <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="o">&gt;</span><span class="mi">5</span><span class="o">&lt;/</span><span class="nx">option</span><span class="o">&gt;</span>
+                        <span class="o">&lt;/</span><span class="nx">select</span><span class="o">&gt;</span>
+                <span class="p">{</span><span class="o">/</span><span class="nx">rating</span><span class="o">:</span><span class="nx">fields</span><span class="p">}</span>
 
-                {!-- YOU CAN STILL HARDCODE THE form input name, for example: &lt;select name="rating[default]"&gt; --}
+                <span class="p">{</span><span class="o">!--</span> <span class="nx">YOU</span> <span class="nx">CAN</span> <span class="nx">STILL</span> <span class="nx">HARDCODE</span> <span class="nx">THE</span> <span class="nx">form</span> <span class="nx">input</span> <span class="nx">name</span><span class="p">,</span> <span class="k">for</span> <span class="nx">example</span><span class="o">:</span> <span class="o">&lt;</span><span class="nx">select</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;rating[default]&quot;</span><span class="o">&gt;</span> <span class="o">--</span><span class="p">}</span>
 
-                {if rating:captcha}
-                        {rating:captcha}
-                        &lt;input name="captcha" type="text"/&gt;
-                {/if}
+                <span class="p">{</span><span class="k">if</span> <span class="nx">rating</span><span class="o">:</span><span class="nx">captcha</span><span class="p">}</span>
+                        <span class="p">{</span><span class="nx">rating</span><span class="o">:</span><span class="nx">captcha</span><span class="p">}</span>
+                        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;captcha&quot;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">/&gt;</span>
+                <span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
 
-                &lt;input type="submit"&gt;
-        {/if}
+                <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
 
-{/exp:channel_ratings:new_rating}</pre>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">new_rating</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

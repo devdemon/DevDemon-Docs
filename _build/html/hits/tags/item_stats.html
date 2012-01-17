@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="item-stats-tag">
 <h1>Item Stats Tag<a class="headerlink" href="#item-stats-tag" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:hits:item_stats}
-    &lt;!-- Template Code --&gt;
-{/exp:hits:item_stats}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">hits</span><span class="o">:</span><span class="nx">item_stats</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">hits</span><span class="o">:</span><span class="nx">item_stats</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This template tag allows you to display hits stats for an item</p>
 <div class="contents local topic" id="contents">
@@ -265,38 +266,39 @@ Here is a list of available variables WITHIN this variable pair</p>
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id39">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:channel:entries entry_id="1"}
-        &lt;h4&gt;{title}&lt;/h4&gt;
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">entry_id</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span>
 
-        {exp:hits:item_stats entry_id="{entry_id}"}
+        <span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">hits</span><span class="o">:</span><span class="nx">item_stats</span> <span class="nx">entry_id</span><span class="o">=</span><span class="s2">&quot;{entry_id}&quot;</span><span class="p">}</span>
 
-                Today: {hits:today}
-                Yesterday: {hits:yesterday}
-                Week: {hits:week}
-                Month: {hits:month}
-                Year: {hits:year}
+                <span class="nx">Today</span><span class="o">:</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">today</span><span class="p">}</span>
+                <span class="nx">Yesterday</span><span class="o">:</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">yesterday</span><span class="p">}</span>
+                <span class="nx">Week</span><span class="o">:</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">week</span><span class="p">}</span>
+                <span class="nx">Month</span><span class="o">:</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">month</span><span class="p">}</span>
+                <span class="nx">Year</span><span class="o">:</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">year</span><span class="p">}</span>
 
-                {hits:linechart:days}&lt;br /&gt;
-                {hits:linechart:weeks} &lt;br /&gt;
-                {hits:linechart:months} &lt;br /&gt;
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">linechart</span><span class="o">:</span><span class="nx">days</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">linechart</span><span class="o">:</span><span class="nx">weeks</span><span class="p">}</span> <span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">linechart</span><span class="o">:</span><span class="nx">months</span><span class="p">}</span> <span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
 
-                &lt;h3&gt;Days&lt;/h3&gt;
-                {hits:days}
-                        {hits:date format="%d-%m-%Y"} - {hits:hits} Hits &lt;br /&gt;
-                {/hits:days}
+                <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="nx">Days</span><span class="o">&lt;/</span><span class="nx">h3</span><span class="o">&gt;</span>
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">days</span><span class="p">}</span>
+                        <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nb">date</span> <span class="nx">format</span><span class="o">=</span><span class="s2">&quot;%d-%m-%Y&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">hits</span><span class="p">}</span> <span class="nx">Hits</span> <span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+                <span class="p">{</span><span class="o">/</span><span class="nx">hits</span><span class="o">:</span><span class="nx">days</span><span class="p">}</span>
 
-                &lt;h3&gt;Weeks&lt;/h3&gt;
-                {hits:weeks}
-                        Week {hits:week_number} - {hits:hits} Hits &lt;br /&gt;
-                {/hits:weeks}
+                <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="nx">Weeks</span><span class="o">&lt;/</span><span class="nx">h3</span><span class="o">&gt;</span>
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">weeks</span><span class="p">}</span>
+                        <span class="nx">Week</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">week_number</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">hits</span><span class="p">}</span> <span class="nx">Hits</span> <span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+                <span class="p">{</span><span class="o">/</span><span class="nx">hits</span><span class="o">:</span><span class="nx">weeks</span><span class="p">}</span>
 
-                &lt;h3&gt;Months&lt;/h3&gt;
-                {hits:months}
-                        {hits:month_number} - {hits:date format="%F"} - {hits:hits} Hits &lt;br /&gt;
-                {/hits:months}
+                <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="nx">Months</span><span class="o">&lt;/</span><span class="nx">h3</span><span class="o">&gt;</span>
+                <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">months</span><span class="p">}</span>
+                        <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">month_number</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nb">date</span> <span class="nx">format</span><span class="o">=</span><span class="s2">&quot;%F&quot;</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="nx">hits</span><span class="o">:</span><span class="nx">hits</span><span class="p">}</span> <span class="nx">Hits</span> <span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+                <span class="p">{</span><span class="o">/</span><span class="nx">hits</span><span class="o">:</span><span class="nx">months</span><span class="p">}</span>
 
-        {/exp:hits:item_stats}
-{/exp:channel:entries}</pre>
+        <span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">hits</span><span class="o">:</span><span class="nx">item_stats</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="credits-log">
 <h1>Credits Log<a class="headerlink" href="#credits-log" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:credits:log}
-    &lt;!-- Template Code --&gt;
-{/exp:credits:log}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">credits</span><span class="o">:</span><span class="nb">log</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">credits</span><span class="o">:</span><span class="nb">log</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This template tag allows you to show display a log of all credits activity</p>
 <div class="contents local topic" id="contents">
@@ -216,13 +217,14 @@ For date variable info see: <a class="reference external" href="http://expressio
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id22">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>&lt;h4&gt;Your Credits Activity (latest 25)&lt;/h4&gt;
-&lt;ul&gt;
-    {exp:credits:logs received_id="CURRENT_USER" limit="25"}
-        {if credits:no_logs}&lt;li&gt;No activity recorded&lt;/li&gt;{/if}
-        &lt;li&gt;{credits:credits} Credits - {credits:action_label} - {credits:date format=""}&lt;/li&gt;
-    {/exp:credits:logs}
-&lt;/ul&gt;</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="nx">Your</span> <span class="nx">Credits</span> <span class="nx">Activity</span> <span class="p">(</span><span class="nx">latest</span> <span class="mi">25</span><span class="p">)</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">credits</span><span class="o">:</span><span class="nx">logs</span> <span class="nx">received_id</span><span class="o">=</span><span class="s2">&quot;CURRENT_USER&quot;</span> <span class="nx">limit</span><span class="o">=</span><span class="s2">&quot;25&quot;</span><span class="p">}</span>
+        <span class="p">{</span><span class="k">if</span> <span class="nx">credits</span><span class="o">:</span><span class="nx">no_logs</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">No</span> <span class="nx">activity</span> <span class="nx">recorded</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">credits</span><span class="o">:</span><span class="nx">credits</span><span class="p">}</span> <span class="nx">Credits</span> <span class="o">-</span> <span class="p">{</span><span class="nx">credits</span><span class="o">:</span><span class="nx">action_label</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="nx">credits</span><span class="o">:</span><span class="nb">date</span> <span class="nx">format</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">credits</span><span class="o">:</span><span class="nx">logs</span><span class="p">}</span>
+<span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</pre></div>
 </div>
 </div>
 </div>

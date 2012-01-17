@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="entries-tag">
 <h1>Entries Tag<a class="headerlink" href="#entries-tag" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:tagger:entries}
-    &lt;!-- Template Code --&gt;
-{/exp:tagger:entries}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This tag shows a list of items that have been tagged with the specified tags.</p>
 <div class="contents local topic" id="contents">
@@ -159,12 +160,14 @@
 <div class="section" id="backspace">
 <h3><a class="toc-backref" href="#id13">backspace=&#8221;&#8220;</a><a class="headerlink" href="#backspace" title="Permalink to this headline">¶</a></h3>
 <p>Backspacing removes characters (including spaces and line breaks) from the last iteration of the loop. For example, if you put a &lt;br /&gt; tag after each entry you&#8217;ll have this:</p>
-<div class="highlight-ci"><pre>Item 1&lt;br /&gt;      Item 2&lt;br /&gt;      Item 3&lt;br /&gt;</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Item</span> <span class="mi">1</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>      <span class="nx">Item</span> <span class="mi">2</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>      <span class="nx">Item</span> <span class="mi">3</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
+</pre></div>
 </div>
 <p>You might, however, not want the &lt;br /&gt; tag after the final item. Simply count the number of characters (including spaces and line breaks) you want to remove and add the backspace parameter to the tag. The &lt;br /&gt; tag has 6 characters plus a new line character, so you would do this:</p>
 <p>backspace=&#8221;7&#8221;</p>
 <p>Would produce this:</p>
-<div class="highlight-ci"><pre>Item 1&lt;br /&gt;      Item 2&lt;br /&gt;      Item 3</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Item</span> <span class="mi">1</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>      <span class="nx">Item</span> <span class="mi">2</span><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>      <span class="nx">Item</span> <span class="mi">3</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="prefix">
@@ -239,34 +242,38 @@ For date variable info see: <a class="reference external" href="http://expressio
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id31">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:tagger:entries tag="{segment_2}" custom_fields="body|extended"}
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">tag</span><span class="o">=</span><span class="s2">&quot;{segment_2}&quot;</span> <span class="nx">custom_fields</span><span class="o">=</span><span class="s2">&quot;body|extended&quot;</span><span class="p">}</span>
 
-        {if tagger:no_entries}&lt;p&gt;No entries where found&lt;/p&gt;{/if}
+        <span class="p">{</span><span class="k">if</span> <span class="nx">tagger</span><span class="o">:</span><span class="nx">no_entries</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">No</span> <span class="nx">entries</span> <span class="nx">where</span> <span class="nx">found</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
 
-        &lt;h2&gt;{tagger:entry_title}&lt;/h2&gt;
+        <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entry_title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h2</span><span class="o">&gt;</span>
 
-        &lt;p&gt;{tagger:body}&lt;/p&gt;
-        &lt;p&gt;{tagger:extended}&lt;/p&gt;
+        <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">body</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">extended</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
 
-        &lt;p&gt;&lt;a href="/entry/{tagger:entry_url_title}"&gt;Read More&lt;/a&gt;&lt;/p&gt;
+        <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;/entry/{tagger:entry_url_title}&quot;</span><span class="o">&gt;</span><span class="nx">Read</span> <span class="nx">More</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
 
-{/exp:tagger:entries}</pre>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="pagination">
 <h2><a class="toc-backref" href="#id32">Pagination</a><a class="headerlink" href="#pagination" title="Permalink to this headline">¶</a></h2>
 <p>The pagination feature allows you to display a limited number of files and then automatically link to the next set. That way you can, for example, show files 1-10 on the first page and automatically link to pages that display 11-20, 21-30, etc</p>
 <p>You have two choices as to the style of the navigation element. The first method would look something like this:</p>
-<div class="highlight-ci"><pre>Page 27 of 344 pages  &lt;&lt; First  &lt;  11 12 13 14 15 &gt;  Last &gt;&gt;</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Page</span> <span class="mi">27</span> <span class="nx">of</span> <span class="mi">344</span> <span class="nx">pages</span>  <span class="o">&lt;&lt;</span> <span class="nx">First</span>  <span class="o">&lt;</span>  <span class="mi">11</span> <span class="mi">12</span> <span class="mi">13</span> <span class="mi">14</span> <span class="mi">15</span> <span class="o">&gt;</span>  <span class="nx">Last</span> <span class="o">&gt;&gt;</span>
+</pre></div>
 </div>
 <p>The second method is a more traditional &#8220;next page&#8221; / &#8220;previous page&#8221; output:</p>
-<div class="highlight-ci"><pre>Previous Page | Next Page</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Previous</span> <span class="nx">Page</span> <span class="o">|</span> <span class="nx">Next</span> <span class="nx">Page</span>
+</pre></div>
 </div>
 <div class="section" id="id1">
 <h3><a class="toc-backref" href="#id33">Parameters</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="paginate">
 <h4><a class="toc-backref" href="#id34">paginate=&#8221;&#8220;</a><a class="headerlink" href="#paginate" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-ci"><pre>paginate="top" paginate="bottom"  paginate="both"</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">paginate</span><span class="o">=</span><span class="s2">&quot;top&quot;</span> <span class="nx">paginate</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span>  <span class="nx">paginate</span><span class="o">=</span><span class="s2">&quot;both&quot;</span>
+</pre></div>
 </div>
 <p>This parameter is for use with entries pagination and determines where the pagination code will appear for your entries:</p>
 <table border="1" class="docutils">
@@ -333,14 +340,15 @@ For example: paginate_base=&#8221;entries/list&#8221;</p>
 </div>
 <div class="section" id="id4">
 <h3><a class="toc-backref" href="#id44">Example</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ci"><pre>{exp:tagger:entries tag="{segment_2}" custom_fields="body"}
-        &lt;h2&gt;{tagger:entry_title}&lt;/h2&gt;
-        {body}
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">tag</span><span class="o">=</span><span class="s2">&quot;{segment_2}&quot;</span> <span class="nx">custom_fields</span><span class="o">=</span><span class="s2">&quot;body&quot;</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entry_title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h2</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="nx">body</span><span class="p">}</span>
 
-        {tagger:paginate}
-                &lt;p&gt;Page {tagger:current_page} of {tagger:total_pages} pages {tagger:pagination_links}&lt;/p&gt;
-        {/tagger:paginate}
-{/exp:tagger:entries}</pre>
+        <span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">paginate</span><span class="p">}</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Page</span> <span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">current_page</span><span class="p">}</span> <span class="nx">of</span> <span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">total_pages</span><span class="p">}</span> <span class="nx">pages</span> <span class="p">{</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">pagination_links</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="o">/</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">paginate</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">tagger</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

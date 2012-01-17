@@ -59,9 +59,10 @@
 	<div class="section" id="content">
 		<div class="section" id="forums-tag">
 <h1>Forums Tag<a class="headerlink" href="#forums-tag" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:forum_subscribe:forums}
-    &lt;!-- Template Code --&gt;
-{/exp:forum_subscribe:forum}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">forum_subscribe</span><span class="o">:</span><span class="nx">forums</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">forum_subscribe</span><span class="o">:</span><span class="nx">forum</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>You can add a link within your forums templates to allow users to subscribe.
 Then provide a link within each forum to allow them to unsubscribe. This gives members quick subscription access.</p>
@@ -124,20 +125,21 @@ Or unsubscribe if he already has. So this URL has dual purpose.</p>
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id10">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:forum_subscribe:forums}
-        &lt;strong&gt;{forum_category}&lt;/strong&gt;
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">forum_subscribe</span><span class="o">:</span><span class="nx">forums</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="nx">strong</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">forum_category</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">strong</span><span class="o">&gt;</span>
 
-        {forums}
-                &lt;p&gt;
-                        {forum_name}:
-                        {if subscribed}
-                                &lt;strong&gt;SUBSCRIBED&lt;/strong&gt; - &lt;a href="{forum_subscribe_url}"&gt;Click to Unsubscribe&lt;/a&gt;
-                        {if:else}
-                                &lt;a href="{forum_subscribe_url}"&gt;Subscribe to forum&lt;/a&gt;
-                        {/if}
-                &lt;/p&gt;
-        {/forums}
-{/exp:forum_subscribe:forums}</pre>
+        <span class="p">{</span><span class="nx">forums</span><span class="p">}</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+                        <span class="p">{</span><span class="nx">forum_name</span><span class="p">}</span><span class="o">:</span>
+                        <span class="p">{</span><span class="k">if</span> <span class="nx">subscribed</span><span class="p">}</span>
+                                <span class="o">&lt;</span><span class="nx">strong</span><span class="o">&gt;</span><span class="nx">SUBSCRIBED</span><span class="o">&lt;/</span><span class="nx">strong</span><span class="o">&gt;</span> <span class="o">-</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{forum_subscribe_url}&quot;</span><span class="o">&gt;</span><span class="nx">Click</span> <span class="nx">to</span> <span class="nx">Unsubscribe</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
+                        <span class="p">{</span><span class="k">if</span><span class="o">:</span><span class="k">else</span><span class="p">}</span>
+                                <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{forum_subscribe_url}&quot;</span><span class="o">&gt;</span><span class="nx">Subscribe</span> <span class="nx">to</span> <span class="nx">forum</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span>
+                        <span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
+                <span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="o">/</span><span class="nx">forums</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">forum_subscribe</span><span class="o">:</span><span class="nx">forums</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

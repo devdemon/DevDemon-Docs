@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="new-vote-tag">
 <h1>New Vote Tag<a class="headerlink" href="#new-vote-tag" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:channel_polls:new_vote}
-    &lt;!-- Template Code --&gt;
-{/exp:channel_polls:new_vote}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_polls</span><span class="o">:</span><span class="nx">new_vote</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_polls</span><span class="o">:</span><span class="nx">new_vote</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This template tag renders the form to submit a new vote</p>
 <div class="contents local topic" id="contents">
@@ -189,24 +190,25 @@ This can happen if the user is part of a member group that cannot vote.</p>
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id21">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:channel:entries channel="default"}
-        {exp:channel_polls:new_vote entry_id="{entry_id}"}
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">channel</span><span class="o">=</span><span class="s2">&quot;default&quot;</span><span class="p">}</span>
+        <span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_polls</span><span class="o">:</span><span class="nx">new_vote</span> <span class="nx">entry_id</span><span class="o">=</span><span class="s2">&quot;{entry_id}&quot;</span><span class="p">}</span>
 
-        &lt;ul&gt;
-        {poll:answers}
-            &lt;li&gt;&lt;input type="radio" name="{poll:form_name}" value="{poll:form_value}"&gt; &amp;nbsp; {poll:answer}&lt;/li&gt;
-        {/poll:answers}
-        &lt;/ul&gt;
+        <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="nx">poll</span><span class="o">:</span><span class="nx">answers</span><span class="p">}</span>
+            <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;{poll:form_name}&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;{poll:form_value}&quot;</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span> <span class="p">{</span><span class="nx">poll</span><span class="o">:</span><span class="nx">answer</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="o">/</span><span class="nx">poll</span><span class="o">:</span><span class="nx">answers</span><span class="p">}</span>
+        <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
 
-        {if poll:closed}&lt;h4&gt;POLL CLOSED&lt;/h4&gt;{/if}
-        {if poll:no_access}&lt;h4&gt;YOU HAVE NO ACCESS&lt;/h4&gt;{/if}
-        {if poll:already_voted}&lt;h4&gt;ALREADY VOTED&lt;/h4&gt;{/if}
-        {if poll:not_voted}&lt;h4&gt;NOT VOTED YET&lt;/h4&gt;{/if}
+        <span class="p">{</span><span class="k">if</span> <span class="nx">poll</span><span class="o">:</span><span class="nx">closed</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="nx">POLL</span> <span class="nx">CLOSED</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
+        <span class="p">{</span><span class="k">if</span> <span class="nx">poll</span><span class="o">:</span><span class="nx">no_access</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="nx">YOU</span> <span class="nx">HAVE</span> <span class="nx">NO</span> <span class="nx">ACCESS</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
+        <span class="p">{</span><span class="k">if</span> <span class="nx">poll</span><span class="o">:</span><span class="nx">already_voted</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="nx">ALREADY</span> <span class="nx">VOTED</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
+        <span class="p">{</span><span class="k">if</span> <span class="nx">poll</span><span class="o">:</span><span class="nx">not_voted</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">h4</span><span class="o">&gt;</span><span class="k">NOT</span> <span class="nx">VOTED</span> <span class="nx">YET</span><span class="o">&lt;/</span><span class="nx">h4</span><span class="o">&gt;</span><span class="p">{</span><span class="o">/</span><span class="k">if</span><span class="p">}</span>
 
-        &lt;input name="submit" value="VOTE" type="submit"&gt;
+        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;VOTE&quot;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span><span class="o">&gt;</span>
 
-        {/exp:channel_polls:new_vote}
-{/exp:channel:entries}</pre>
+        <span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_polls</span><span class="o">:</span><span class="nx">new_vote</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>

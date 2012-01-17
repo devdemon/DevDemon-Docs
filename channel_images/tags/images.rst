@@ -150,6 +150,11 @@ The image description as specified in the field row
 ================
 Image category (if used/specified)
 
+{image:upload_date}
+====================
+Shows the date/time of the upload
+For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
+
 {image:entry_id}
 ================
 The entry_id this image belongs too. Handy for when you are listing images from different entries

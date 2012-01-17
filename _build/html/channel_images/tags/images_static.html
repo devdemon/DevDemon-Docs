@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="images-static-tag">
 <h1>Images Static Tag<a class="headerlink" href="#images-static-tag" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:channel_images:images_static}
-    &lt;!-- Template Code --&gt;
-{/exp:channel_images:images_static}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_images</span><span class="o">:</span><span class="nx">images_static</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_images</span><span class="o">:</span><span class="nx">images_static</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>Turn special Channel Images variables in posts body into images!
 This tag does NOT loop!</p>
@@ -193,41 +194,44 @@ For example: &lt;img src=&#8221;url_to_img_size&#8221; alt=&#8221;img_title&#822
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id22">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>Imagine this is the text in your post</p>
-<div class="highlight-ci"><pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in lacinia purus.
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Lorem</span> <span class="nx">ipsum</span> <span class="nx">dolor</span> <span class="nx">sit</span> <span class="nx">amet</span><span class="p">,</span> <span class="nx">consectetur</span> <span class="nx">adipiscing</span> <span class="nx">elit</span><span class="o">.</span> <span class="nx">Quisque</span> <span class="nx">in</span> <span class="nx">lacinia</span> <span class="nx">purus</span><span class="o">.</span>
 
-{image:1}
-{image:1:description}
+<span class="p">{</span><span class="nx">image</span><span class="o">:</span><span class="mi">1</span><span class="p">}</span>
+<span class="p">{</span><span class="nx">image</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="nx">description</span><span class="p">}</span>
 
-Quisque molestie tempus mauris eu lobortis. Sed id nunc eu diam dapibus mollis non id ligula.
+<span class="nx">Quisque</span> <span class="nx">molestie</span> <span class="nx">tempus</span> <span class="nx">mauris</span> <span class="nx">eu</span> <span class="nx">lobortis</span><span class="o">.</span> <span class="nx">Sed</span> <span class="nx">id</span> <span class="nx">nunc</span> <span class="nx">eu</span> <span class="nx">diam</span> <span class="nx">dapibus</span> <span class="nx">mollis</span> <span class="nx">non</span> <span class="nx">id</span> <span class="nx">ligula</span><span class="o">.</span>
 
-{image:2}
-{image:2:description}
+<span class="p">{</span><span class="nx">image</span><span class="o">:</span><span class="mi">2</span><span class="p">}</span>
+<span class="p">{</span><span class="nx">image</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="nx">description</span><span class="p">}</span>
 
-Ut bibendum mauris in lectus suscipit dictum. Donec lacinia pulvinar nisi, ac dignissim mauris molestie id.
-Praesent pellentesque vestibulum ligula venenatis sollicitudin.</pre>
+<span class="nx">Ut</span> <span class="nx">bibendum</span> <span class="nx">mauris</span> <span class="nx">in</span> <span class="nx">lectus</span> <span class="nx">suscipit</span> <span class="nx">dictum</span><span class="o">.</span> <span class="nx">Donec</span> <span class="nx">lacinia</span> <span class="nx">pulvinar</span> <span class="nx">nisi</span><span class="p">,</span> <span class="nx">ac</span> <span class="nx">dignissim</span> <span class="nx">mauris</span> <span class="nx">molestie</span> <span class="nx">id</span><span class="o">.</span>
+<span class="nx">Praesent</span> <span class="nx">pellentesque</span> <span class="nx">vestibulum</span> <span class="nx">ligula</span> <span class="nx">venenatis</span> <span class="nx">sollicitudin</span><span class="o">.</span>
+</pre></div>
 </div>
 <p>You can then use this in your template</p>
-<div class="highlight-ci"><pre>{exp:channel:entries channel="about" url_title="{segment_3}"}
-    &lt;h2&gt;{title}&lt;/h2&gt;
-    {exp:channel_images:images_static entry_id="{entry_id}"}
-        {body}
-        {extended}
-    {/exp:channel_images:images_static}
-{/exp:channel:entries}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span> <span class="nx">channel</span><span class="o">=</span><span class="s2">&quot;about&quot;</span> <span class="nx">url_title</span><span class="o">=</span><span class="s2">&quot;{segment_3}&quot;</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">h2</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_images</span><span class="o">:</span><span class="nx">images_static</span> <span class="nx">entry_id</span><span class="o">=</span><span class="s2">&quot;{entry_id}&quot;</span><span class="p">}</span>
+        <span class="p">{</span><span class="nx">body</span><span class="p">}</span>
+        <span class="p">{</span><span class="nx">extended</span><span class="p">}</span>
+    <span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_images</span><span class="o">:</span><span class="nx">images_static</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>Which will render like this</p>
-<div class="highlight-ci"><pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in lacinia purus.
+<div class="highlight-ci"><div class="highlight"><pre><span class="nx">Lorem</span> <span class="nx">ipsum</span> <span class="nx">dolor</span> <span class="nx">sit</span> <span class="nx">amet</span><span class="p">,</span> <span class="nx">consectetur</span> <span class="nx">adipiscing</span> <span class="nx">elit</span><span class="o">.</span> <span class="nx">Quisque</span> <span class="nx">in</span> <span class="nx">lacinia</span> <span class="nx">purus</span><span class="o">.</span>
 
-&lt;img src="url_to_img" alt="some title"&gt;
-This is a very funny image
+<span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;url_to_img&quot;</span> <span class="nx">alt</span><span class="o">=</span><span class="s2">&quot;some title&quot;</span><span class="o">&gt;</span>
+<span class="k">This</span> <span class="nx">is</span> <span class="nx">a</span> <span class="nx">very</span> <span class="nx">funny</span> <span class="nx">image</span>
 
-Quisque molestie tempus mauris eu lobortis. Sed id nunc eu diam dapibus mollis non id ligula.
+<span class="nx">Quisque</span> <span class="nx">molestie</span> <span class="nx">tempus</span> <span class="nx">mauris</span> <span class="nx">eu</span> <span class="nx">lobortis</span><span class="o">.</span> <span class="nx">Sed</span> <span class="nx">id</span> <span class="nx">nunc</span> <span class="nx">eu</span> <span class="nx">diam</span> <span class="nx">dapibus</span> <span class="nx">mollis</span> <span class="nx">non</span> <span class="nx">id</span> <span class="nx">ligula</span><span class="o">.</span>
 
-&lt;img src="url_to_img2" alt="another title"&gt;
-This one if even better!
+<span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;url_to_img2&quot;</span> <span class="nx">alt</span><span class="o">=</span><span class="s2">&quot;another title&quot;</span><span class="o">&gt;</span>
+<span class="k">This</span> <span class="nx">one</span> <span class="k">if</span> <span class="nx">even</span> <span class="nx">better</span><span class="o">!</span>
 
-Ut bibendum mauris in lectus suscipit dictum. Donec lacinia pulvinar nisi, ac dignissim mauris molestie id.
-Praesent pellentesque vestibulum ligula venenatis sollicitudin.</pre>
+<span class="nx">Ut</span> <span class="nx">bibendum</span> <span class="nx">mauris</span> <span class="nx">in</span> <span class="nx">lectus</span> <span class="nx">suscipit</span> <span class="nx">dictum</span><span class="o">.</span> <span class="nx">Donec</span> <span class="nx">lacinia</span> <span class="nx">pulvinar</span> <span class="nx">nisi</span><span class="p">,</span> <span class="nx">ac</span> <span class="nx">dignissim</span> <span class="nx">mauris</span> <span class="nx">molestie</span> <span class="nx">id</span><span class="o">.</span>
+<span class="nx">Praesent</span> <span class="nx">pellentesque</span> <span class="nx">vestibulum</span> <span class="nx">ligula</span> <span class="nx">venenatis</span> <span class="nx">sollicitudin</span><span class="o">.</span>
+</pre></div>
 </div>
 </div>
 </div>

@@ -60,9 +60,10 @@
 	<div class="section" id="content">
 		<div class="section" id="rating-comment-rating">
 <h1>RATING: Comment Rating<a class="headerlink" href="#rating-comment-rating" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-ci"><pre>{exp:channel_ratings:rating_comment}
-    &lt;!-- Template Code --&gt;
-{/exp:channel_ratings:rating_comment}</pre>
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">rating_comment</span><span class="p">}</span>
+    <span class="o">&lt;!--</span> <span class="nx">Template</span> <span class="nx">Code</span> <span class="o">--&gt;</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">rating_comment</span><span class="p">}</span>
+</pre></div>
 </div>
 <p>This tag will display the rating ratings of an individual comment</p>
 <div class="contents local topic" id="contents">
@@ -164,13 +165,14 @@ For example, a value of 1 would give you a result like this for a rating value: 
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id17">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-ci"><pre>{exp:comment:entries sort="asc" limit="20"}
-        {comment}
+<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">comment</span><span class="o">:</span><span class="nx">entries</span> <span class="nb">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span> <span class="nx">limit</span><span class="o">=</span><span class="s2">&quot;20&quot;</span><span class="p">}</span>
+        <span class="p">{</span><span class="nx">comment</span><span class="p">}</span>
 
-        &lt;p&gt;By {name} on {comment_date format="%Y %m %d"}&lt;/p&gt;
+        <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">By</span> <span class="p">{</span><span class="nx">name</span><span class="p">}</span> <span class="nx">on</span> <span class="p">{</span><span class="nx">comment_date</span> <span class="nx">format</span><span class="o">=</span><span class="s2">&quot;%Y %m %d&quot;</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
 
-        Rating: {exp:channel_ratings:rating_comment comment_id="{comment_id}"} {rating:overall:stars} {/exp:channel_ratings:rating_comment}
-{/exp:comment:entries}</pre>
+        <span class="nx">Rating</span><span class="o">:</span> <span class="p">{</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">rating_comment</span> <span class="nx">comment_id</span><span class="o">=</span><span class="s2">&quot;{comment_id}&quot;</span><span class="p">}</span> <span class="p">{</span><span class="nx">rating</span><span class="o">:</span><span class="nx">overall</span><span class="o">:</span><span class="nx">stars</span><span class="p">}</span> <span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">channel_ratings</span><span class="o">:</span><span class="nx">rating_comment</span><span class="p">}</span>
+<span class="p">{</span><span class="o">/</span><span class="nb">exp</span><span class="o">:</span><span class="nx">comment</span><span class="o">:</span><span class="nx">entries</span><span class="p">}</span>
+</pre></div>
 </div>
 </div>
 </div>
