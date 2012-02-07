@@ -67,7 +67,7 @@ orderby=""
 The "order" parameter sets the display order of the images. Setting options for this parameter include:
 
 -  orderby="title"
--  orderby="random" 
+-  orderby="random"
 
 **Default:** orderby="image_order"
 
@@ -95,7 +95,7 @@ Backspacing removes characters (including spaces and line breaks) from the last 
 ::
 
 	Item 1<br />      Item 2<br />      Item 3<br />
-	
+
 You might, however, not want the <br /> tag after the final item. Simply count the number of characters (including spaces and line breaks) you want to remove and add the backspace parameter to the tag. The <br /> tag has 6 characters plus a new line character, so you would do this:
 
 backspace="7"
@@ -188,6 +188,16 @@ The file size, but now in bytes
 The official mime-type of the file
 Example: image/jpeg
 
+{image:cover}
+==============
+Outputs a "1" if the image is an cover. Otherwise a "0" is not.
+
+::
+	{if "{image:cover}" == 1}
+	THIS IS THE COVER IMAGE!
+	{/if}
+	
+
 {image:switch="one|two|three"}
 ===============================
 This variable permits you to rotate through any number of values as the entries are displayed. The first image will use "option_one", the second will use "option_two", the third "option_three", the fourth "option_one", and so on.
@@ -202,11 +212,11 @@ The most straightforward use for this would be to alternate colors. It could be 
 		        <a href="{image:url}"><img src="{image:url:medium}" /></a>
 		</div>
 	{/exp:channel_images:images}
-	
+
 The images would then alternate between <div class="one"> and <div class="two">.
 
 Multiple instances of the `{image:switch=}` tag may be used and the system will intelligently keep track of each one.
-	
+
 
 {image:count}
 ==============
@@ -284,14 +294,14 @@ Example
 **********************
 ::
 
-	{exp:channel:entries channel="about"}   
+	{exp:channel:entries channel="about"}
 		<h1>{title</h1>
-		
+
 		<h2>All Images</h2>
 		{exp:channel_images:images entry_id="{entry_id}"}
 	    	<a href="{image:url}"><img src="{image:url:medium}" /></a>
 		{/exp:channel_images:images}
-	{/exp:channel:entries}	
+	{/exp:channel:entries}
 
 
 ***********************
@@ -304,11 +314,11 @@ You have two choices as to the style of the navigation element. The first method
 ::
 
 	Page 27 of 344 pages  << First  <  11 12 13 14 15 >  Last >>
-	
+
 The second method is a more traditional "next page" / "previous page" output:
 
 ::
-	
+
 	Previous Page | Next Page
 
 
