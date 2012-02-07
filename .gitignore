@@ -1,1 +1,6 @@
+devdemon_docs.sublime-workspace
 /_build
+/.project
+/.settings
+*.DS_Store
+/.buildpath
