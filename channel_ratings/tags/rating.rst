@@ -145,9 +145,9 @@ This variable outputs "star" images to construct a graphical representation of t
 Conditionals
 ****************************
 
-{if rating:no_items}
+{if rating:no_rating}
 ======================
-This tag will conditionally display the code inside the tag if there are no items to display.
+This tag will conditionally display the code inside the tag if there are no ratings to display.
 
 **********************
 Example
