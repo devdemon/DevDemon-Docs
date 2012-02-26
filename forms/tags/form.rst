@@ -29,7 +29,7 @@ form_name=""
 This parameter can be used to specify a specific form by using it's form name
 
 display_error=""
-==============
+=================
 This parameter allows you to specify how forms errors will be displayed
 
 =================== ====================================================================================
@@ -52,7 +52,7 @@ This parameter allows you to define where the user will be returned after submit
 If this parameter is not defined, they will be returned to the form page.
 
 output_submit=""
-==============
+=================
 You can use this parameter to disable the output of the submit button.
 
 **Default:** yes
@@ -156,11 +156,11 @@ Conditionals
 ****************************
 
 {if forms:no_form}
-=====================
+==================
 This tag will conditionally display the code inside the tag if no form was found
 
 {if forms:closed}
-=====================
+=================
 This tag will conditionally display the code inside the tag if the form is closed
 
 **********************
@@ -169,8 +169,8 @@ Example
 There are two ways to display a form. Using a single tag or a tag pair.
 Difference? The tag pair version allows you to specify conditionals and style your multipage variables
 
-Signle Tag Version
---------------------
+Single Tag Version
+===================
 
 ::
 
@@ -178,7 +178,7 @@ Signle Tag Version
 
 
 Tag Pair Version
---------------------
+==================
 
 ::
 
