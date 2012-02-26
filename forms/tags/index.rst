@@ -2,7 +2,7 @@
 Template Tags
 #############
 
-Channel Ratings builds on the powerful templating language of ExpressionEngine. A number of template tags are provided, which will allow you to completely customize every aspect of your html output.
+Forms builds on the powerful templating language of ExpressionEngine. A number of template tags are provided, which will allow you to completely customize every aspect of your html output.
 
 .. toctree::
   :glob:
