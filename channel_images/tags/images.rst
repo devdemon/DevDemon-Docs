@@ -50,7 +50,7 @@ Image URL Title of an image. Use this parameter to limit the images list to a sp
 
 cover_only=""
 ===============
-Limit the results to only the cover images.
+Limit the results to only the cover images. (or first image)
 
 - **Options:** yes | no
 - **Default:** no
@@ -58,6 +58,13 @@ Limit the results to only the cover images.
 skip_cover=""
 ===============
 Skip cover images
+
+- **Options:** yes | no
+- **Default:** no
+
+force_cover=""
+===============
+Limit the results to only the cover images. Unlike cover_only="" this parameter does not show the first image, if not cover was selected.
 
 - **Options:** yes | no
 - **Default:** no
