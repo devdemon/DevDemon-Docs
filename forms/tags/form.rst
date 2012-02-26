@@ -7,8 +7,7 @@ Form Tag
       <!-- Template Code -->
   {/exp:forms:form}
 
-Allows you to track hits on cached templates. This tag outputs and img tag which points to a special URL on your site to track hits.
-It will do it's best to ignore the most popular search engines. You will place this tag only on Single Entry Pages, sicne you only want to count the hits for a single entry at a time right?
+This tag is responsible for displaying the complete form. Most of it's behaviour is specified in the UI. But you can still adjust some specific options.
 
 .. contents::
   :local:
@@ -78,6 +77,80 @@ This parameter allows you to change the default variable prefix used. This is es
 
 For example the variable `{forms:count}`, if you use prefix="fm" the variable will now be {fm:count}
 
+**********************
+Variables
+**********************
+
+{forms:form_id}
+=================
+The internal Form ID
+
+{forms:label}
+==============
+The form label
+
+{forms:short_name}
+====================
+The form short name
+
+{forms:entry_id}
+================
+The entry_id linked to this form (if any)
+
+{forms:channel_id}
+===================
+The channel_id of the entry linked to this form (if any)
+
+{forms:ee_field_id}
+====================
+The field_id of the entry linked to this form (if any)
+
+{forms:member_id}
+==================
+The member_id of the member who created this form
+
+{forms:date_created}
+=====================
+Creation date of this form
+
+{forms:date_last_entry}
+========================
+The date of the last entry submission
+
+{forms:total_entries}
+========================
+The total amount of submissions
+
+{forms:current_page}
+======================
+The current page number
+
+{forms:total_pages}
+=====================
+The total amount of pages this form has
+
+{forms:paged}
+==============
+A simpel variable that outputs "yes" if the current form has multiple pages
+
+****************************
+Variable Pairs
+****************************
+
+{forms:fields} {/forms:fields}
+==================================
+Lists all fields for this form
+
+Here is a list of available variables WITHIN this variable pair
+
+{forms:field}
+--------------
+Renders the field
+
+{forms:field_type}
+--------------------
+The field type
+
 ****************************
 Conditionals
 ****************************
@@ -90,31 +163,36 @@ This tag will conditionally display the code inside the tag if no form was found
 =====================
 This tag will conditionally display the code inside the tag if the form is closed
 
-
-**********************
-Variables
-**********************
-
-{forms:form_id}
-=================
-The internal Form ID
-
-{forms:}
-============
-The full URL to the original image
-
-	
 **********************
 Example
 **********************
+There are two ways to display a form. Using a single tag or a tag pair.
+Difference? The tag pair version allows you to specify conditionals and style your multipage variables
+
+Signle Tag Version
+--------------------
 
 ::
 
-	{exp:channel:entries channel="blog"}
-	
-		<h2>{title}</h2>
-		{body}
-		
-		{exp:hits:count_hits_image entry_id="{entry_id}"}
-		{!-- EXAMPLE OUTPUT: <img src="http://www.mysite.com/?ACT=123?t=2&i=66" alt="" /> --}
-	{/exp:channel:entries}
+	{exp:forms:form form_name="untitled" display_error="inline"}
+
+
+Tag Pair Version
+--------------------
+
+::
+
+	{exp:forms:form form_name="untitled" display_error="inline"}
+
+	<h1>{forms:label}</h1>
+	{if forms:paged} <h3>Current Page: {forms:current_page} of {forms:total_pages}</h3>{/if}
+
+	{if forms:closed} FORM IS CLOSED! {/if}
+	{if forms:no_form} NO FORM FOUND! {/if}
+
+	{forms:fields}
+		{forms:field}
+	{/forms:fields}
+
+	{/exp:forms:form}
+
