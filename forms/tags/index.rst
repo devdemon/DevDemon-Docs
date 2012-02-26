@@ -8,5 +8,4 @@ Forms builds on the powerful templating language of ExpressionEngine. A number o
   :glob:
   :maxdepth: 2
 
-  installation
-  tags/index
+  *
