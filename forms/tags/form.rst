@@ -133,6 +133,14 @@ The total amount of pages this form has
 ==============
 A simpel variable that outputs "yes" if the current form has multiple pages
 
+{forms:total_form_errors}
+==========================
+The total amount of "Global" form submission errors
+
+{forms:total_field_errors}
+==========================
+The total amount of "Field" related form submission errors
+
 ****************************
 Variable Pairs
 ****************************
@@ -150,6 +158,33 @@ Renders the field
 {forms:field_type}
 --------------------
 The field type
+
+{forms:form_errors} {/forms:form_errors}
+==================================
+This variable pair will list all "Global" form errors that occured during submission.
+All field specific submission error will not be displayed here. Each field outputs it's own error.
+
+Here is a list of available variables WITHIN this variable pair
+
+{forms:error}
+--------------
+The error message
+
+{forms:error_count}
+--------------------
+The error count in the current loop
+
+{forms:error_type}
+--------------------
+The error type
+
+=================== ====================================================================================
+Type                Description
+=================== ====================================================================================
+**general**         A general error
+**captcha**         A captcha related error
+=================== ====================================================================================
+
 
 ****************************
 Conditionals
@@ -196,3 +231,30 @@ Tag Pair Version
 
 	{/exp:forms:form}
 
+Global Form Error Example
+=======================
+
+::
+
+	{exp:forms:form form_name="untitled" display_error="inline"}
+
+	<h1>{forms:label}</h1>
+	{if forms:paged} <h3>Current Page: {forms:current_page} of {forms:total_pages}</h3>{/if}
+
+	{if "{forms:total_form_errors}" > 0}
+	<strong style="color:red">Sorry, the your submission contained some errors:</strong>
+	<ul>
+		{forms:form_errors}
+			<li>{forms:error}</li>
+		{/forms:form_errors}
+	</ul>
+	{/if}
+
+	{if forms:closed} FORM IS CLOSED! {/if}
+	{if forms:no_form} NO FORM FOUND! {/if}
+
+	{forms:fields}
+		{forms:field}
+	{/forms:fields}
+
+	{/exp:forms:form}
