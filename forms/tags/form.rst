@@ -160,7 +160,7 @@ Renders the field
 The field type
 
 {forms:form_errors} {/forms:form_errors}
-==================================
+=========================================
 This variable pair will list all "Global" form errors that occured during submission.
 All field specific submission error will not be displayed here. Each field outputs it's own error.
 
@@ -232,7 +232,7 @@ Tag Pair Version
 	{/exp:forms:form}
 
 Global Form Error Example
-=======================
+==========================
 
 ::
 
