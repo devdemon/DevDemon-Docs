@@ -11,4 +11,5 @@ Channel Images builds on the powerful templating language of ExpressionEngine. A
   images
   grouped_images
   images_static
+  next_prev_image
   zip
