@@ -190,7 +190,7 @@ The most straightforward use for this would be to alternate colors. It could be 
 ::
 
 	{exp:channel_files:files entry_id="{entry_id}"}
-		<div class="{switch='one|two'}">
+		<div class="{file:switch='one|two'}">
 		        <h2>{file:title}</h2>
 		        <a href="{file:url}">{file:filename} ({file:filesize})</a>
 		</div>

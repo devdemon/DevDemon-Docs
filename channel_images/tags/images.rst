@@ -214,7 +214,7 @@ The most straightforward use for this would be to alternate colors. It could be 
 ::
 
 	{exp:channel_images:images entry_id="{entry_id}"}
-		<div class="{switch='one|two'}">
+		<div class="{file:switch='one|two'}">
 		        <h2>{image:title}</h2>
 		        <a href="{image:url}"><img src="{image:url:medium}" /></a>
 		</div>
