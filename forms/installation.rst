@@ -5,7 +5,7 @@ Installation & Updates
 Installing Forms
 ==========================
 
-#. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
+#. Please ensure you are running at least ExpressionEngine 2.3.1 prior to installing the module.
 #. Copy **Forms** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **Forms** themes folder to your **/themes/third_party/** folder.
 #. In the ExpressionEngine control panel, head to Add-ons > Modules, and click 'Install' next to the module name.
