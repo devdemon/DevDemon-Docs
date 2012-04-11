@@ -196,13 +196,13 @@ Example
 **********************
 ::
 
-{exp:channel_ratings:top_entries custom_fields="body|extended"}
-	
-		<h2>{rating:entry_title}</h2>
+	{exp:channel_ratings:top_entries custom_fields="body|extended"}
 		
-		<p>{rating:body}</p>
-		<p>{rating:extended}</p>
-		
-		Rating: OVERALL: {rating:overall:stars} ({rating:overall:avg} of 5)
-				
-{/exp:channel_ratings:top_entries}
+			<h2>{rating:entry_title}</h2>
+			
+			<p>{rating:body}</p>
+			<p>{rating:extended}</p>
+			
+			Rating: OVERALL: {rating:overall:stars} ({rating:overall:avg} of 5)
+					
+	{/exp:channel_ratings:top_entries}
