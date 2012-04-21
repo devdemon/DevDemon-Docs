@@ -266,6 +266,10 @@ The full URL to the sized image
 ============================
 The same as `{image:secure_url:SIZENAME}` but now with HTTPS
 
+{image:locked_url:SIZENAME}
+============================
+Obfuscated time limited url to the sized image
+
 {image:filename:SIZENAME}
 ============================
 The filename of the sized image
