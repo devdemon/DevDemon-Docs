@@ -1,5 +1,5 @@
 ######################
-Next/Prev Image Tag
+Next Prev Image Tag
 ######################
 ::
 
