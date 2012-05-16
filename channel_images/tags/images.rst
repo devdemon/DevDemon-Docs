@@ -48,6 +48,13 @@ image_url_title=""
 ===================
 Image URL Title of an image. Use this parameter to limit the images list to a specific image.
 
+member_id=""
+==============
+Limit the images to a specific member_id (the one who uploaded the image).
+Seperate multiple by a pipe |
+
+.. note:: Use CURRENT_USER to indicate the current logged in user
+
 cover_only=""
 ===============
 Limit the results to only the cover images. (or first image)
