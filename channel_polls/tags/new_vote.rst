@@ -24,6 +24,14 @@ url_title=""
 ==============
 Same as entry_id="" but now it with the entry's url_title.
 
+field=""
+==============
+Show the poll for a specific field
+
+field_id=""
+==============
+Show the poll for a specific field_id (faster then field="")
+
 return=""
 =============
 This parameter allows you to define where the user will be returned after submitting a vote. The parameter can be defined in two ways:
