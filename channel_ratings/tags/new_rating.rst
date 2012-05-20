@@ -154,7 +154,7 @@ Example
 	{exp:channel_ratings:new_rating entry_id="{entry_id}" captcha="yes" max_value="5" return="/channel_rating/new_rating/"}
 	
 		{if rating:already_rated} You have already rated this entry{/if}
-		
+
 		{if rating:not_rated}
 		
 			{rating:fields}

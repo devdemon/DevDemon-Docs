@@ -8,4 +8,4 @@ Tutorials
   :glob:
   :maxdepth: 2
 
-  *
+  ajax_likes/index

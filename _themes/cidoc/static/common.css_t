@@ -137,10 +137,22 @@ fieldset{ border: 0; }
 	padding: 10px 10px 8px;
 }
 
+.highlight-css,
+.highlight-html,
+.highlight-javascript
+{
+	background-color: #F8F8F8;
+	border: 1px solid #CCC;
+	margin: 20px 0 20px 20px;
+	padding: 10px 10px 8px;
+}
+
 	.highlight-ci,
 	.highlight-ee,
 	.highlight-rst,
 	.highlight-bash,
+	.highlight-javascript,
+	.highlight-css,
 	.highlight-perl{
 		-moz-box-shadow: 4px 4px 0 rgba(0,0,0,0.03);
 		-webkit-box-shadow: 4px 4px 0 rgba(0,0,0,0.03);
