@@ -8,4 +8,5 @@ Channel Ratings
 
   installation
   tags/index
+  tutorials/index
 
