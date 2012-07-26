@@ -39,8 +39,7 @@ Type                Description
 **inline**          Inline error reporting
 =================== ====================================================================================
 
-- **Default:**: default
-- **Recommended**: inline
+- **Default:**: inline
 
 return=""
 =============
@@ -209,7 +208,7 @@ Single Tag Version
 
 ::
 
-	{exp:forms:form form_name="untitled" display_error="inline"}
+	{exp:forms:form form_name="untitled"}
 
 
 Tag Pair Version
@@ -217,7 +216,7 @@ Tag Pair Version
 
 ::
 
-	{exp:forms:form form_name="untitled" display_error="inline"}
+	{exp:forms:form form_name="untitled"}
 
 	<h1>{forms:label}</h1>
 	{if forms:paged} <h3>Current Page: {forms:current_page} of {forms:total_pages}</h3>{/if}
@@ -236,7 +235,7 @@ Global Form Error Example
 
 ::
 
-	{exp:forms:form form_name="untitled" display_error="inline"}
+	{exp:forms:form form_name="untitled"}
 
 	<h1>{forms:label}</h1>
 	{if forms:paged} <h3>Current Page: {forms:current_page} of {forms:total_pages}</h3>{/if}
