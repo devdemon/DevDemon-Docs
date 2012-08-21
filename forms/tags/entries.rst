@@ -16,6 +16,10 @@ The Entries tag allows you to display Forms entries in your EE Templates.
 Parameters
 ***********************
 
+fentry_id=""
+==============
+Form entry entry id. Use this paramter to only return a specific entry
+
 entry_id=""
 ==============
 Entry ID of an Channel Entry. Use this parameter to grab the form linked to a specific entry.
