@@ -14,6 +14,7 @@ DevDemon Addons Documentation
   channel_ratings/index
   forms/index
   credits/index
+  updater/index
   tagger/index
   hits/index
   mega_upload/index

@@ -1,4 +1,4 @@
-Forms
+Updater
 =========================================
 
 .. toctree::
@@ -8,5 +8,6 @@ Forms
 
   installation
   faq
+  common_errors
   tested_addons
 
