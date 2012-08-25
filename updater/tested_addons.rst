@@ -33,9 +33,9 @@ Pixel & Tonic
 ADDON                        RESULT
 ============================ =================================
 Assets 1.2.1                 Success
-Playa 4.3.3                  Success
+Playa 4.3.3                  Failed // Incompatible directory structure
 Wygwam 2.5                   Success
-Matrix 2.4.3                 Success
+Matrix 2.4.3                 Failed // Incompatible directory structure
 ============================ =================================
 
 ***********************
@@ -63,6 +63,22 @@ override.css 1.20               Failed // Not supported by Updater
 NSM Twitter 1.0.2               Failed // Zip in a Zip??
 NSM Reports 1.0.6               Failed // Zip in a Zip??
 NSM Better Meta 1.1.4           Success
+=============================== =================================
+
+***********************
+mithra62
+***********************
+=============================== =================================
+ADDON                           RESULT
+=============================== =================================
+Automat:ee 1.2.1                Success
+Backup Pro 1.8.6                Success
+Backup Pro(ish) 1.0.5           Success
+CT Admin 1.4.5                  Success
+EE Syntax 1.0                   Success
+Export It 1.1.3                 Success
+Meetup 1.0                      Success
+Securit:ee 1.3.1                Success
 =============================== =================================
 
 ***********************
@@ -99,14 +115,11 @@ Others
 ============================ =================================
 ADDON                        RESULT
 ============================ =================================
-Automat:ee 1.2.1             Failed // Incompatible directory structure
-Backup Pro 1.8.6             Failed // Incompatible directory structure
 BrilliantRetail 1160+        Success
 Better Workflow 1.3.1        Failed // Accesory fails to install: Use of undefined constant BASE
 CE Image 2.4                 Failed // Incompatible directory structure
 CE Cache 1.8                 Success
 ProForm 1.18                 Failed // Non-valid config.php (eg: not compatible with NSM Updater style)
-Securit:ee 1.3.1             Failed // Incompatible directory structure
 Zenbu 1.6.1                  Failed // Incompatible directory structure
 Zoo Visitor 1.3.14           Success
 ============================ =================================
