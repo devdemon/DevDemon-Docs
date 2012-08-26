@@ -9,7 +9,7 @@ Installing Updater
 #. Copy **Updater** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **Updater** themes folder to your **/themes/third_party/** folder.
 #. In the ExpressionEngine control panel, head to Add-ons > Modules, and click 'Install' next to the module name.
-#. Make sure you set the Extension, Fieldtype and Module all to 'Install', and click Submit.
+#. Make sure you set the Module all to 'Install', and click Submit.
 
 Updater is now installed. Please visit the docs for setup, usage, and faqs
 

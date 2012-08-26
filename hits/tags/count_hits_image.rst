@@ -3,9 +3,7 @@ Count Hits (Image) Tag
 ########################
 ::
 
-  {exp:hits:count_hits}
-      <!-- Template Code -->
-  {/exp:hits:count_hits}
+  {exp:hits:count_hits_image}
 
 Allows you to track hits on cached templates. This tag outputs and img tag which points to a special URL on your site to track hits.
 It will do it's best to ignore the most popular search engines. You will place this tag only on Single Entry Pages, sicne you only want to count the hits for a single entry at a time right?
@@ -51,7 +49,7 @@ br_id=""
 For BrilliantRetail
 
 .. important:: You MUST use one of the above parameters.
-	
+
 **********************
 Example
 **********************
@@ -59,10 +57,10 @@ Example
 ::
 
 	{exp:channel:entries channel="blog"}
-	
+
 		<h2>{title}</h2>
 		{body}
-		
+
 		{exp:hits:count_hits_image entry_id="{entry_id}"}
 		{!-- EXAMPLE OUTPUT: <img src="http://www.mysite.com/?ACT=123?t=2&i=66" alt="" /> --}
 	{/exp:channel:entries}

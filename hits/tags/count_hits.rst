@@ -4,8 +4,6 @@ Count Hits Tag
 ::
 
   {exp:hits:count_hits}
-      <!-- Template Code -->
-  {/exp:hits:count_hits}
 
 This tag counts the hits received. It will do it's best to ignore the most popular search engines.
 You will place this tag only on Single Entry Pages, sicne you only want to count the hits for a single entry at a time right?
@@ -51,7 +49,7 @@ br_id=""
 For BrilliantRetail
 
 .. important:: You MUST use one of the above parameters.
-	
+
 **********************
 Example
 **********************
@@ -59,9 +57,9 @@ Example
 ::
 
 	{exp:channel:entries channel="blog"}
-	
+
 		{exp:hits:count_hits entry_id="{entry_id}"}
-		
+
 		<h2>{title}</h2>
 		{body}
 	{/exp:channel:entries}
