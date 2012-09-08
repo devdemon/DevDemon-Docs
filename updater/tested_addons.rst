@@ -123,17 +123,3 @@ ProForm 1.18                 Failed // Non-valid config.php (eg: not compatible 
 Zenbu 1.6.1                  Failed // Incompatible directory structure
 Zoo Visitor 1.3.14           Success
 ============================ =================================
-
-**********************************************
-Compatible Directory Structures
-**********************************************
-
-=============== ===============================================
-DIR             Path
-=============== ===============================================
-SYSTEM          /system/expressionengine/third_party/ADDON/
-SYSTEM          /ee2/third_party/ADDON/
-THEMES          /themes/third_party/ADDON/
-=============== ===============================================
-
-NOTE: They can live in Sub-directories (unlimited depth)

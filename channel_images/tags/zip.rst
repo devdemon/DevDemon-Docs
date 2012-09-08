@@ -3,13 +3,13 @@ Zip Tag
 ############
 ::
 
-	{exp:channel_images:zip}  
+	{exp:channel_images:zip}
 
 This template tag allows you to create a .zip file from all the images in the entry (Local storage only)
 
 .. contents::
   :local:
-  
+
 ***********************
 Requirements
 ***********************
@@ -32,6 +32,14 @@ Same as entry_id="" but now it with the entry's url_title.
 filename=""
 ==============
 Filename for the .zip (without the .zip)
+
+size=""
+==============
+If you want to zip specific sizes you can specify them here.
+Seperate multiple by a pipe |
+
+Note: For the "original" size use: ORIGINAL. Example: size="ORIGINAL|small|medium"
+
 
 *********
 Example

@@ -5,6 +5,8 @@ Installation & Updates
 Installing Channel Videos
 ==========================
 
+.. note:: You can also install *Channel Videos* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
+
 #. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
 #. Copy **channel_videos** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **channel_videos** themes folder to your **/themes/third_party/** folder.
@@ -16,6 +18,8 @@ Channel Videos is now installed. Please visit the docs for setup, usage, and tem
 
 Updating Channel Videos
 ========================
+
+.. note:: You can also update *Channel Videos* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
 
 #. Backup your ExpressionEngine database and files on your web server!
 #. Did i already mention BACKUP!

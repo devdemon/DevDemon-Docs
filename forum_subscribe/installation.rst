@@ -5,6 +5,8 @@ Installation & Updates
 Installing Forum Subscribe
 ==========================
 
+.. note:: You can also install *Forum Subscribe* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
+
 #. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
 #. Copy **forum_subscribe** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **forum_subscribe** themes folder to your **/themes/third_party/** folder.
@@ -16,6 +18,8 @@ Forum Subscribe is now installed. Please visit the docs for setup, usage, and te
 
 Updating Forum Subscribe
 ========================
+
+.. note:: You can also update *Forum Subscribe* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
 
 #. Backup your ExpressionEngine database and files on your web server!
 #. Did i already mention BACKUP!

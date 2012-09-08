@@ -7,15 +7,17 @@ DevDemon Addons Documentation
   :maxdepth: 1
 
   *
-  channel_images/index
+
   channel_files/index
-  channel_videos/index
+  channel_images/index
   channel_polls/index
   channel_ratings/index
-  forms/index
+  channel_videos/index
   credits/index
-  updater/index
-  tagger/index
+  editor/index
+  forms/index
+  forum_subscribe/index
   hits/index
   mega_upload/index
-  forum_subscribe/index
+  tagger/index
+  updater/index

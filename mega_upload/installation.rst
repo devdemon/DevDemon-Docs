@@ -5,6 +5,8 @@ Installation & Updates
 Installing Mega Upload
 ==========================
 
+.. note:: You can also install *Mega Upload* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
+
 #. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
 #. Copy **mega_upload** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **mega_upload** themes folder to your **/themes/third_party/** folder.
@@ -16,6 +18,8 @@ Mega Upload is now installed. Please visit the docs for setup, usage, and templa
 
 Updating Mega Upload
 ========================
+
+.. note:: You can also update *Mega Upload* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
 
 #. Backup your ExpressionEngine database and files on your web server!
 #. Did i already mention BACKUP!

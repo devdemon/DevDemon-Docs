@@ -1,4 +1,4 @@
-Updater
+Editor
 =========================================
 
 .. toctree::
@@ -7,9 +7,5 @@ Updater
   :maxdepth: 2
 
   installation
-  faq
-  common_errors
   config_override
-  addons_guide/index
-  tested_addons
-
+  create_button

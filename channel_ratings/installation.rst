@@ -5,6 +5,8 @@ Installation & Updates
 Installing Channel Ratings
 ==========================
 
+.. note:: You can also install *Channel Ratings* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
+
 #. Please ensure you are running at least ExpressionEngine 2.2 prior to installing the module.
 #. Copy **channel_ratings** module folder to your **/system/expressionengine/third_party/** folder.
 #. Copy the **channel_ratings** themes folder to your **/themes/third_party/** folder.
@@ -16,6 +18,8 @@ Channel Ratings is now installed. Please visit the docs for setup, usage, and te
 
 Updating Channel Ratings
 ========================
+
+.. note:: You can also update *Channel Ratings* by using our `Updater <http://www.devdemon.com/updater/>`_ addon!
 
 #. Backup your ExpressionEngine database and files on your web server!
 #. Did i already mention BACKUP!
