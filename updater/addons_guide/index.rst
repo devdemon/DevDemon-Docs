@@ -9,6 +9,8 @@ Addon Detection Methods
 =========================
 When an Addon is uploaded Updater goes ahead and unzips the package. Then we try to detect the addon name, version number and type.
 
+
+
 .. toctree::
   :glob:
   :maxdepth: 2

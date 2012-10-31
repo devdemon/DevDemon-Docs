@@ -18,7 +18,7 @@ Channel Polls 2.7.2          Success
 Channel Ratings 4.0.2        Success
 Channel Videos 3.0.5         Success
 Forms 3.1.2                  Success
-Credits 2.4.1                Success // Note: It will not install the BR/CT payment processing files
+Credits 2.4.1                Success
 Forum Subscribe 2.3.1        Success
 Hits 2.3.0                   Success
 Mega Upload 2.5.2            Success
@@ -119,7 +119,9 @@ BrilliantRetail 1160+        Success
 Better Workflow 1.3.1        Failed // Accesory fails to install: Use of undefined constant BASE
 CE Image 2.4                 Failed // Incompatible directory structure
 CE Cache 1.8                 Success
+NavEE 2.2.6                  Success
 ProForm 1.18                 Failed // Non-valid config.php (eg: not compatible with NSM Updater style)
+Structure 3.3.4              Success
 Zenbu 1.6.1                  Failed // Incompatible directory structure
 Zoo Visitor 1.3.14           Success
 ============================ =================================

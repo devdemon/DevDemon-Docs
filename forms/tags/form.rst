@@ -76,6 +76,33 @@ This parameter allows you to change the default variable prefix used. This is es
 
 For example the variable `{forms:count}`, if you use prefix="fm" the variable will now be {fm:count}
 
+Email Notification Override
+=============================
+These parameters allow you to override some email notification settings
+
+=============================== ====================================================================================
+Type                            Description
+=============================== ====================================================================================
+**Admin Notification**
+notify_admin_from_name=""       From Name
+notify_admin_from_email=""      From Email
+notify_admin_cc=""              Email CC (separate multiple by comma)
+notify_admin_subject=""         Email Subject
+notify_admin_bcc=""             Email BCC (separate multiple by comma)
+notify_admin_replyto_name=""    Reply-To Name
+notify_admin_replyto_email=""   Reply-To Email
+notify_admin_replyto_author=""  Set to "yes" to use submission author info
+**User Notification**
+notify_user_from_name=""        From Name
+notify_user_from_email=""       From Email
+notify_user_cc=""               Email CC (separate multiple by comma)
+notify_user_subject=""          Email Subject
+notify_user_bcc=""              Email BCC (separate multiple by comma)
+notify_user_replyto_name=""     Reply-To Name
+notify_user_replyto_email=""    Reply-To Email
+=============================== ====================================================================================
+
+
 **********************
 Variables
 **********************
