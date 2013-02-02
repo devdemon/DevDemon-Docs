@@ -25,6 +25,10 @@ url_title=""
 ==============
 Same as entry_id="" but now it with the entry's url_title.
 
+field=""
+============
+The field name of the field you want (REQUIRED)
+
 category=""
 ==============
 Limit the images list to a specific category as chosen in the Fieldtype.
@@ -117,19 +121,19 @@ Imagine this is the text in your post
 ::
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in lacinia purus.
-	
+
 	{image:1}
 	{image:1:description}
-	
+
 	Quisque molestie tempus mauris eu lobortis. Sed id nunc eu diam dapibus mollis non id ligula.
-	
+
 	{image:2}
 	{image:2:description}
-	
+
 	Ut bibendum mauris in lectus suscipit dictum. Donec lacinia pulvinar nisi, ac dignissim mauris molestie id.
 	Praesent pellentesque vestibulum ligula venenatis sollicitudin.
 
-	
+
 You can then use this in your template
 ::
 
@@ -139,20 +143,20 @@ You can then use this in your template
 	        {body}
 	        {extended}
 	    {/exp:channel_images:images_static}
-	{/exp:channel:entries} 
-	
+	{/exp:channel:entries}
+
 Which will render like this
 ::
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in lacinia purus.
-	
+
 	<img src="url_to_img" alt="some title">
 	This is a very funny image
-	
+
 	Quisque molestie tempus mauris eu lobortis. Sed id nunc eu diam dapibus mollis non id ligula.
-	
+
 	<img src="url_to_img2" alt="another title">
 	This one if even better!
-	
+
 	Ut bibendum mauris in lectus suscipit dictum. Donec lacinia pulvinar nisi, ac dignissim mauris molestie id.
 	Praesent pellentesque vestibulum ligula venenatis sollicitudin.

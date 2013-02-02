@@ -9,6 +9,9 @@ Images Tag
 
 This template tag allows you to show all images within a single entry.
 
+.. note:: TIP: You can also use the field tag to display images:  {your_ci_field} {image:url} {/your_ci_field}
+All of the parameters/variables below can be used with this tag. The entry_id parameters is not needed!
+
 .. contents::
   :local:
 
@@ -210,7 +213,7 @@ Outputs a "1" if the image is an cover. Otherwise a "0" is not.
 	{if "{image:cover}" == 1}
 	THIS IS THE COVER IMAGE!
 	{/if}
-	
+
 
 {image:switch="one|two|three"}
 ===============================
