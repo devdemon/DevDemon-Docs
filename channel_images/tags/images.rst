@@ -9,8 +9,16 @@ Images Tag
 
 This template tag allows you to show all images within a single entry.
 
-.. note:: TIP: You can also use the field tag to display images:  {your_ci_field} {image:url} {/your_ci_field}
-All of the parameters/variables below can be used with this tag. The entry_id parameters is not needed!
+::
+
+	TIP: You can also use the field tag to display images
+
+	{your_ci_field limit="5"}
+	<img src="{image:url}">
+	{/your_ci_field}
+
+	All of the parameters/variables below can be used with this tag. The entry_id parameters is not needed!
+
 
 .. contents::
   :local:

@@ -9,6 +9,16 @@ Files Tag
 
 This template tag allows you to show all files within a single entry.
 
+::
+
+	TIP: You can also use the field tag to display files
+
+	{your_files_field limit="5"}
+	<a href="{file:url}">{file:title}</a>
+	{/your_files_field}
+
+	All of the parameters/variables below can be used with this tag. The entry_id parameters is not needed!
+
 .. contents::
   :local:
 
@@ -67,7 +77,7 @@ The "order" parameter sets the display order of the files. Setting options for t
 -  orderby="filename"
 -  orderby="filesize"
 -  orderby="file_id"
--  orderby="random" 
+-  orderby="random"
 
 **Default:** orderby="file_order"
 
@@ -96,7 +106,7 @@ Backspacing removes characters (including spaces and line breaks) from the last 
 ::
 
 	Item 1<br />      Item 2<br />      Item 3<br />
-	
+
 You might, however, not want the <br /> tag after the final item. Simply count the number of characters (including spaces and line breaks) you want to remove and add the backspace parameter to the tag. The <br /> tag has 6 characters plus a new line character, so you would do this:
 
 backspace="7"
@@ -153,7 +163,7 @@ Shows the date/time of the upload
 For date variable info see: http://expressionengine.com/user_guide/templates/date_variable_formatting.html
 
 .. deprecated:: 5.0.1
-   Use `{file:upload_date}` instead.   
+   Use `{file:upload_date}` instead.
 
 {file\:upload_date}
 ====================
@@ -195,11 +205,11 @@ The most straightforward use for this would be to alternate colors. It could be 
 		        <a href="{file:url}">{file:filename} ({file:filesize})</a>
 		</div>
 	{/exp:channel_files:files}
-	
+
 The files would then alternate between <div class="one"> and <div class="two">.
 
 Multiple instances of the `{file:switch=}` tag may be used and the system will intelligently keep track of each one.
-	
+
 
 {file\:count}
 =============
@@ -243,14 +253,14 @@ Example
 **********************
 ::
 
-	{exp:channel:entries channel="about"}   
+	{exp:channel:entries channel="about"}
 		<h1>{title</h1>
-		
+
 		<h2>All Files</h2>
 		{exp:channel_files:files entry_id="{entry_id}"}
 	    	<a href="{file:locked_url}" title="{file:title}">{file:title}</a>
 		{/exp:channel_files:files}
-	{/exp:channel:entries}	
+	{/exp:channel:entries}
 
 
 ***********************
@@ -263,11 +273,11 @@ You have two choices as to the style of the navigation element. The first method
 ::
 
 	Page 27 of 344 pages  << First  <  11 12 13 14 15 >  Last >>
-	
+
 The second method is a more traditional "next page" / "previous page" output:
 
 ::
-	
+
 	Previous Page | Next Page
 
 
