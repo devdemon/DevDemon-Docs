@@ -69,18 +69,18 @@ EE-Garage
 ADDON                           RESULT
 =============================== =================================
 override.css 1.20               Failed // Not supported by Updater
-NSM .htaccess Generator         (not tested, we don't own a license)
+NSM .htaccess Generator         Success
 NSM Addon Updater 1.3.0         Success
 NSM Better Meta 1.1.4           Success
 NSM Categorie 1.0.1             Success
-NSM Channels                    (not tested, we don't own a license)
+NSM Channels                    Success
 NSM Live Look 1.2.3             Success
 NSM TinyMCE 1.1.1               Success
 NSM Body Class 1.2.0            Success
 NSM Email Login 1.0.1           Success
 NSM Publish Hints 1.0.1         Success
 NSM Morphine 2.0.3              Success
-NSM Transplant                  (not tested, we don't own a license)
+NSM Transplant                  Success
 NSM Twitter 1.0.2               Failed // Zip in a Zip??
 NSM Reports 1.0.6               Failed // Zip in a Zip??
 =============================== =================================
@@ -136,7 +136,7 @@ Causing Effect
 ADDON                        RESULT
 ============================ =================================
 CE Cache 1.9                 Success
-CE Image 2.4                 Failed // Incompatible directory structure
+CE Image 2.4                 Success
 ============================ =================================
 
 ***********************
