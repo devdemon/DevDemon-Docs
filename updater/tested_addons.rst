@@ -157,11 +157,12 @@ ADDON                        RESULT
 ============================ =================================
 AB Pagination 1.5.8          Success
 AJAX Auth 1.0.4              Success
-BrilliantRetail 1160+        Success
+Better Pages 1.1.6           Success
 Better Workflow 1.3.1        Success
+BrilliantRetail 1160+        Success
 Child Categories 3.0.2       Success
-CP Analytics 2.0.9           Success
 Content Elements 1.1.0       Failed // Incompatible directory structure
+CP Analytics 2.0.9           Success
 Detour Pro 1.3.2             Success
 Entry Access 1.5.1           Success
 EZ Image Resize 1.5.3        Success
