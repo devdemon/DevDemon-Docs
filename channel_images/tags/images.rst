@@ -318,35 +318,35 @@ IPTC
 ==================================== ============================================================================================
 Variables                            Descript
 ==================================== ============================================================================================
-*{image:iptc:object_name}*           Image Title
-*{image:iptc:keywords}*              Image Keywords (separated by comma)
-*{image:iptc:special_instructions}*  Special Intructions
-*{image:iptc:date_created}*          Raw Date (example: 20111202)
-*{image:iptc:date}*                  EE Compatible Date (if date is available) // Example: {image:iptc:date format="%Y-%m-%d"}
-*{image:iptc:time_created}*          Time Created (if available)
-*{image:iptc:byline}*                By-line (Author)
-*{image:iptc:byline_title}*          By-line Title (Author Title)
-*{image:iptc:city}*                  City
-*{image:iptc:sub_location}*          Sub Location (suburb?)
-*{image:iptc:province_state}*        Provice/State
-*{image:iptc:country_name}*          Country
-*{image:iptc:headline}*              Headline
-*{image:iptc:credit}*                Credit
-*{image:iptc:source}*                Source
-*{image:iptc:copyright_notice}*      Copyright Notice
-*{image:iptc:caption_abstract}*      Caption Abstract
-*{image:iptc:writer_editor}*         Write/Editor
-*{image:iptc:otr}*                   Original Transmission Reference
+{image:iptc:object_name}             Image Title
+{image:iptc:keywords}                Image Keywords (separated by comma)
+{image:iptc:special_instructions}    Special Intructions
+{image:iptc:date_created}            Raw Date (example: 20111202)
+{image:iptc:date}                    EE Compatible Date (if date is available) // Example: {image:iptc:date format="%Y-%m-%d"}
+{image:iptc:time_created}            Time Created (if available)
+{image:iptc:byline}                  By-line (Author)
+{image:iptc:byline_title}            By-line Title (Author Title)
+{image:iptc:city}                    City
+{image:iptc:sub_location}            Sub Location (suburb?)
+{image:iptc:province_state}          Provice/State
+{image:iptc:country_name}            Country
+{image:iptc:headline}                Headline
+{image:iptc:credit}                  Credit
+{image:iptc:source}                  Source
+{image:iptc:copyright_notice}        Copyright Notice
+{image:iptc:caption_abstract}        Caption Abstract
+{image:iptc:writer_editor}           Write/Editor
+{image:iptc:otr}                     Original Transmission Reference
 
-*{image:iptc:title}*                 Same as `{image:iptc:object_name}`
-*{image:iptc:author}*                Same as `{image:iptc:byline}`
-*{image:iptc:author_title}*          Same as `{image:iptc:author_title}`
-*{image:iptc:caption}*               Same as `{image:iptc:caption_abstract}`
-*{image:iptc:caption_author}*        Same as `{image:iptc:writer_editor}`
-*{image:iptc:state}*                 Same as `{image:iptc:province_state}`
-*{image:iptc:location}*              Same as `{image:iptc:sub_location}`
-*{image:iptc:country}*               Same as `{image:iptc:country_name}`
-*{image:iptc:copyright}*             Same as `{image:iptc:copyright_notice}`
+{image:iptc:title}                   Same as `{image:iptc:object_name}`
+{image:iptc:author}                  Same as `{image:iptc:byline}`
+{image:iptc:author_title}            Same as `{image:iptc:author_title}`
+{image:iptc:caption}                 Same as `{image:iptc:caption_abstract}`
+{image:iptc:caption_author}          Same as `{image:iptc:writer_editor}`
+{image:iptc:state}                   Same as `{image:iptc:province_state}`
+{image:iptc:location}                Same as `{image:iptc:sub_location}`
+{image:iptc:country}                 Same as `{image:iptc:country_name}`
+{image:iptc:copyright}               Same as `{image:iptc:copyright_notice}`
 ==================================== ============================================================================================
 
 EXIF
@@ -355,23 +355,23 @@ EXIF
 ==================================== ============================================================================================
 Variables                            Descript
 ==================================== ============================================================================================
-*{image:exif:make}*                  Make
-*{image:exif:model}*                 Model
-*{image:exif:software}*              Software
-*{image:exif:image_description}*     Image Description
-*{image:exif:datetime_original}*     Raw Datetime (example: 2006:03:10 17:48:48)
-*{image:exif:date}*                  EE Compatible Date (if date is available) // Example: {image:exif:date format="%Y-%m-%d"}
-*{image:exif:flash}*                 Flash setting (example:No Flash) or (example: Auto, Fired) etc
-*{image:exif:orientation}*           Orientation (example: 'Horizontal (normal))
-*{image:exif:artist}*                Artist (Author)
-*{image:exif:copyright}*             Copyright Notice
-*{image:exif:exposure_time}*         Exposure Time (example: 10/1600 sec)
-*{image:exif:focal_length}*          Focal Length (example: 130 mm)
-*{image:exif:fnumber}*               Fnumber (example: &fnof;/4)
-*{image:exif:iso}*                   ISO
-*{image:exif:gps_lon}*               GPS Longitude
-*{image:exif:gps_lat}*               GPS Latitude
-*{image:exif:gps_alt}*               GPS Altitude (example: 20m)
+{image:exif:make}                    Make
+{image:exif:model}                   Model
+{image:exif:software}                Software
+{image:exif:image_description}       Image Description
+{image:exif:datetime_original}       Raw Datetime (example: 2006:03:10 17:48:48)
+{image:exif:date}                    EE Compatible Date (if date is available) // Example: {image:exif:date format="%Y-%m-%d"}
+{image:exif:flash}                   Flash setting (example:No Flash) or (example: Auto, Fired) etc
+{image:exif:orientation}             Orientation (example: 'Horizontal (normal))
+{image:exif:artist}                  Artist (Author)
+{image:exif:copyright}               Copyright Notice
+{image:exif:exposure_time}           Exposure Time (example: 10/1600 sec)
+{image:exif:focal_length}            Focal Length (example: 130 mm)
+{image:exif:fnumber}                 Fnumber (example: &fnof;/4)
+{image:exif:iso}                     ISO
+{image:exif:gps_lon}                 GPS Longitude
+{image:exif:gps_lat}                 GPS Latitude
+{image:exif:gps_alt}                 GPS Altitude (example: 20m)
 ==================================== ============================================================================================
 
 
@@ -381,21 +381,21 @@ XMP
 ==================================== ============================================================================================
 Variables                            Descript
 ==================================== ============================================================================================
-*{image:xmp:author}*                 Author Name
-*{image:xmp:creator_email}*          Author Email
-*{image:xmp:creator_tel}*            Author Tel. Number
-*{image:xmp:creator_url}*            Author URL
-*{image:xmp:creator_address}*        Author Street Address
-*{image:xmp:creator_city}*           Author City
-*{image:xmp:creator_zip}*            Author Zip/Postal Code
-*{image:xmp:creator_region}*         Author State/Ragion/Province
-*{image:xmp:creator_country}*        Author Country
-*{image:xmp:usage_terms}*            Usage Terms
-*{image:xmp:description}*            Description
-*{image:xmp:rights}*                 Usage Rights
-*{image:xmp:title}*                  Image Title
-*{image:xmp:source}*                 Source
-*{image:xmp:copyright_notice}*       Copyright Notice
+{image:xmp:author}                   Author Name
+{image:xmp:creator_email}            Author Email
+{image:xmp:creator_tel}              Author Tel. Number
+{image:xmp:creator_url}              Author URL
+{image:xmp:creator_address}          Author Street Address
+{image:xmp:creator_city}             Author City
+{image:xmp:creator_zip}              Author Zip/Postal Code
+{image:xmp:creator_region}           Author State/Ragion/Province
+{image:xmp:creator_country}          Author Country
+{image:xmp:usage_terms}              Usage Terms
+{image:xmp:description}              Description
+{image:xmp:rights}                   Usage Rights
+{image:xmp:title}                    Image Title
+{image:xmp:source}                   Source
+{image:xmp:copyright_notice}         Copyright Notice
 ==================================== ============================================================================================
 
 ****************************
