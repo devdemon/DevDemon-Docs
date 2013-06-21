@@ -21,3 +21,4 @@ DevDemon Addons Documentation
   mega_upload/index
   tagger/index
   updater/index
+  entry_mapper/index
